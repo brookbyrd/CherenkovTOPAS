@@ -1,0 +1,1187 @@
+
+includeFile = Materials.topas
+
+###################################################
+# Box 01
+###################################################
+
+s:Ge/MyBox01/Type     = "TsBox"
+s:Ge/MyBox01/Material = "MyWater"
+s:Ge/MyBox01/Parent   = "World"
+d:Ge/MyBox01/HLX      = 0.15 m
+d:Ge/MyBox01/HLY      = 0.15 m
+d:Ge/MyBox01/HLZ      = 0.001 m
+d:Ge/MyBox01/TransX   = 0 m
+d:Ge/MyBox01/TransY   = 0 m
+d:Ge/MyBox01/TransZ   = -0.001 m
+s:Ge/MyBox01/Color    = "blue"
+s:Ge/MyBox01/DrawingStyle = "WireFrame"
+
+###################################################
+# Box 02
+###################################################
+
+s:Ge/MyBox02/Type     = "TsBox"
+s:Ge/MyBox02/Material = "MyWater"
+s:Ge/MyBox02/Parent   = "World"
+d:Ge/MyBox02/HLX      = 0.15 m
+d:Ge/MyBox02/HLY      = 0.15 m
+d:Ge/MyBox02/HLZ      = 0.001 m
+d:Ge/MyBox02/TransX   = 0 m
+d:Ge/MyBox02/TransY   = 0 m
+d:Ge/MyBox02/TransZ   = -0.003 m
+s:Ge/MyBox02/Color    = "blue"
+s:Ge/MyBox02/DrawingStyle = "WireFrame"
+
+###################################################
+# Box 03
+###################################################
+
+s:Ge/MyBox03/Type     = "TsBox"
+s:Ge/MyBox03/Material = "MyWater"
+s:Ge/MyBox03/Parent   = "World"
+d:Ge/MyBox03/HLX      = 0.15 m
+d:Ge/MyBox03/HLY      = 0.15 m
+d:Ge/MyBox03/HLZ      = 0.001 m
+d:Ge/MyBox03/TransX   = 0 m
+d:Ge/MyBox03/TransY   = 0 m
+d:Ge/MyBox03/TransZ   = -0.005 m
+s:Ge/MyBox03/Color    = "blue"
+s:Ge/MyBox03/DrawingStyle = "WireFrame"
+
+###################################################
+# Box 04
+###################################################
+
+s:Ge/MyBox04/Type     = "TsBox"
+s:Ge/MyBox04/Material = "MyWater"
+s:Ge/MyBox04/Parent   = "World"
+d:Ge/MyBox04/HLX      = 0.15 m
+d:Ge/MyBox04/HLY      = 0.15 m
+d:Ge/MyBox04/HLZ      = 0.001 m
+d:Ge/MyBox04/TransX   = 0 m
+d:Ge/MyBox04/TransY   = 0 m
+d:Ge/MyBox04/TransZ   = -0.007 m
+s:Ge/MyBox04/Color    = "blue"
+s:Ge/MyBox04/DrawingStyle = "WireFrame"
+
+###################################################
+# Box 05
+###################################################
+
+s:Ge/MyBox05/Type     = "TsBox"
+s:Ge/MyBox05/Material = "MyWater"
+s:Ge/MyBox05/Parent   = "World"
+d:Ge/MyBox05/HLX      = 0.15 m
+d:Ge/MyBox05/HLY      = 0.15 m
+d:Ge/MyBox05/HLZ      = 0.001 m
+d:Ge/MyBox05/TransX   = 0 m
+d:Ge/MyBox05/TransY   = 0 m
+d:Ge/MyBox05/TransZ   = -0.009 m
+s:Ge/MyBox05/Color    = "blue"
+s:Ge/MyBox05/DrawingStyle = "WireFrame"
+
+###################################################
+# Box 06
+###################################################
+
+s:Ge/MyBox06/Type     = "TsBox"
+s:Ge/MyBox06/Material = "MyWater"
+s:Ge/MyBox06/Parent   = "World"
+d:Ge/MyBox06/HLX      = 0.15 m
+d:Ge/MyBox06/HLY      = 0.15 m
+d:Ge/MyBox06/HLZ      = 0.001 m
+d:Ge/MyBox06/TransX   = 0 m
+d:Ge/MyBox06/TransY   = 0 m
+d:Ge/MyBox06/TransZ   = -0.011 m
+s:Ge/MyBox06/Color    = "blue"
+s:Ge/MyBox06/DrawingStyle = "WireFrame"
+
+###################################################
+# Box 07
+###################################################
+
+s:Ge/MyBox07/Type     = "TsBox"
+s:Ge/MyBox07/Material = "MyWater"
+s:Ge/MyBox07/Parent   = "World"
+d:Ge/MyBox07/HLX      = 0.15 m
+d:Ge/MyBox07/HLY      = 0.15 m
+d:Ge/MyBox07/HLZ      = 0.001 m
+d:Ge/MyBox07/TransX   = 0 m
+d:Ge/MyBox07/TransY   = 0 m
+d:Ge/MyBox07/TransZ   = -0.013 m
+s:Ge/MyBox07/Color    = "blue"
+s:Ge/MyBox07/DrawingStyle = "WireFrame"
+
+###################################################
+# Box 08
+###################################################
+
+s:Ge/MyBox08/Type     = "TsBox"
+s:Ge/MyBox08/Material = "MyWater"
+s:Ge/MyBox08/Parent   = "World"
+d:Ge/MyBox08/HLX      = 0.15 m
+d:Ge/MyBox08/HLY      = 0.15 m
+d:Ge/MyBox08/HLZ      = 0.001 m
+d:Ge/MyBox08/TransX   = 0 m
+d:Ge/MyBox08/TransY   = 0 m
+d:Ge/MyBox08/TransZ   = -0.015 m
+s:Ge/MyBox08/Color    = "blue"
+s:Ge/MyBox08/DrawingStyle = "WireFrame"
+
+###################################################
+# Box 09
+###################################################
+
+s:Ge/MyBox09/Type     = "TsBox"
+s:Ge/MyBox09/Material = "MyWater"
+s:Ge/MyBox09/Parent   = "World"
+d:Ge/MyBox09/HLX      = 0.15 m
+d:Ge/MyBox09/HLY      = 0.15 m
+d:Ge/MyBox09/HLZ      = 0.001 m
+d:Ge/MyBox09/TransX   = 0 m
+d:Ge/MyBox09/TransY   = 0 m
+d:Ge/MyBox09/TransZ   = -0.017 m
+s:Ge/MyBox09/Color    = "blue"
+s:Ge/MyBox09/DrawingStyle = "WireFrame"
+
+###################################################
+# Box 10
+###################################################
+
+s:Ge/MyBox10/Type     = "TsBox"
+s:Ge/MyBox10/Material = "MyWater"
+s:Ge/MyBox10/Parent   = "World"
+d:Ge/MyBox10/HLX      = 0.15 m
+d:Ge/MyBox10/HLY      = 0.15 m
+d:Ge/MyBox10/HLZ      = 0.001 m
+d:Ge/MyBox10/TransX   = 0 m
+d:Ge/MyBox10/TransY   = 0 m
+d:Ge/MyBox10/TransZ   = -0.019 m
+s:Ge/MyBox10/Color    = "blue"
+s:Ge/MyBox10/DrawingStyle = "WireFrame"
+
+###################################################
+# Box 11
+###################################################
+
+s:Ge/MyBox11/Type     = "TsBox"
+s:Ge/MyBox11/Material = "MyWater"
+s:Ge/MyBox11/Parent   = "World"
+d:Ge/MyBox11/HLX      = 0.15 m
+d:Ge/MyBox11/HLY      = 0.15 m
+d:Ge/MyBox11/HLZ      = 0.001 m
+d:Ge/MyBox11/TransX   = 0 m
+d:Ge/MyBox11/TransY   = 0 m
+d:Ge/MyBox11/TransZ   = -0.021 m
+s:Ge/MyBox11/Color    = "blue"
+s:Ge/MyBox11/DrawingStyle = "WireFrame"
+
+###################################################
+# Box 12
+###################################################
+
+s:Ge/MyBox12/Type     = "TsBox"
+s:Ge/MyBox12/Material = "MyWater"
+s:Ge/MyBox12/Parent   = "World"
+d:Ge/MyBox12/HLX      = 0.15 m
+d:Ge/MyBox12/HLY      = 0.15 m
+d:Ge/MyBox12/HLZ      = 0.001 m
+d:Ge/MyBox12/TransX   = 0 m
+d:Ge/MyBox12/TransY   = 0 m
+d:Ge/MyBox12/TransZ   = -0.023 m
+s:Ge/MyBox12/Color    = "blue"
+s:Ge/MyBox12/DrawingStyle = "WireFrame"
+
+###################################################
+# Box 13
+###################################################
+
+s:Ge/MyBox13/Type     = "TsBox"
+s:Ge/MyBox13/Material = "MyWater"
+s:Ge/MyBox13/Parent   = "World"
+d:Ge/MyBox13/HLX      = 0.15 m
+d:Ge/MyBox13/HLY      = 0.15 m
+d:Ge/MyBox13/HLZ      = 0.001 m
+d:Ge/MyBox13/TransX   = 0 m
+d:Ge/MyBox13/TransY   = 0 m
+d:Ge/MyBox13/TransZ   = -0.025 m
+s:Ge/MyBox13/Color    = "blue"
+s:Ge/MyBox13/DrawingStyle = "WireFrame"
+
+###################################################
+# Box 14
+###################################################
+
+s:Ge/MyBox14/Type     = "TsBox"
+s:Ge/MyBox14/Material = "MyWater"
+s:Ge/MyBox14/Parent   = "World"
+d:Ge/MyBox14/HLX      = 0.15 m
+d:Ge/MyBox14/HLY      = 0.15 m
+d:Ge/MyBox14/HLZ      = 0.001 m
+d:Ge/MyBox14/TransX   = 0 m
+d:Ge/MyBox14/TransY   = 0 m
+d:Ge/MyBox14/TransZ   = -0.027 m
+s:Ge/MyBox14/Color    = "blue"
+s:Ge/MyBox14/DrawingStyle = "WireFrame"
+
+###################################################
+# Box 15
+###################################################
+
+s:Ge/MyBox15/Type     = "TsBox"
+s:Ge/MyBox15/Material = "MyWater"
+s:Ge/MyBox15/Parent   = "World"
+d:Ge/MyBox15/HLX      = 0.15 m
+d:Ge/MyBox15/HLY      = 0.15 m
+d:Ge/MyBox15/HLZ      = 0.001 m
+d:Ge/MyBox15/TransX   = 0 m
+d:Ge/MyBox15/TransY   = 0 m
+d:Ge/MyBox15/TransZ   = -0.029 m
+s:Ge/MyBox15/Color    = "blue"
+s:Ge/MyBox15/DrawingStyle = "WireFrame"
+
+###################################################
+# Last Box 16
+###################################################
+s:Ge/MyBox16/Type     = "TsBox"
+s:Ge/MyBox16/Material = "MyWater"
+s:Ge/MyBox16/Parent   = "World"
+d:Ge/MyBox16/HLX      = 0.15 m
+d:Ge/MyBox16/HLY      = 0.15 m
+d:Ge/MyBox16/HLZ      = 0.5 m
+d:Ge/MyBox16/TransX   = 0 m
+d:Ge/MyBox16/TransY   = 0 m
+d:Ge/MyBox16/TransZ   = -0.529 m
+s:Ge/MyBox16/Color    = "blue"
+s:Ge/MyBox16/DrawingStyle = "WireFrame"
+
+    
+###################################################
+# Scorer 01
+###################################################
+
+# Dose Scoring
+s:Sc/Dose01/Parent     = "World"
+s:Sc/Dose01/Quantity       = "DoseToMedium"
+s:Sc/Dose01/Component      = "MyBox01"
+#s:Sc/Dose01/Surface        = "MyBox01/ZPlusSurface"
+i:Sc/Dose01/XBins          = 30
+i:Sc/Dose01/YBins          = 30
+i:Sc/Dose01/ZBins          = 1
+s:Sc/Dose01/OutputFolder   = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/Dose01/OutputFile     = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/doseout_myplane_slice01"
+b:Sc/Dose01/OutputToConsole           = "False"
+s:Sc/Dose01/IfOutputFileAlreadyExists = "Overwrite"
+sv:Sc/Dose01/Report        = 2 "mean" "standard_deviation"
+s:Sc/Dose01/OutputType     = "DICOM"
+b:Sc/Dose01/DICOMOutput32BitsPerPixel = "True"
+
+# Electron origin scoring
+s:Sc/ElectronScorer01/Parent           = "World"
+s:Sc/ElectronScorer01/Quantity           = "OriginCount"
+s:Sc/ElectronScorer01/Component          = "MyBox01"
+#s:Sc/ElectronScorer01/Surface            = "MyBox01/ZPlusSurface"
+i:Sc/ElectronScorer01/OutputBufferSize   = 1000
+b:Sc/ElectronScorer01/IncludeParentID    = "True"
+b:Sc/ElectronScorer01/IncludeCreatorProcess = "True"
+b:Sc/ElectronScorer01/IncludeVertexInfo  = "True"
+i:Sc/ElectronScorer01/XBins              = 30
+i:Sc/ElectronScorer01/YBins              = 30
+i:Sc/ElectronScorer01/ZBins              = 1
+sv:Sc/ElectronScorer01/OnlyIncludeParticlesNamed = 1 "e-"
+s:Sc/ElectronScorer01/OutputFolder       = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/ElectronScorer01/OutputFile         = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/electrondistribution_ref_slice01"
+b:Sc/ElectronScorer01/OutputToConsole    = "False"
+s:Sc/ElectronScorer01/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/ElectronScorer01/OutputType         = "DICOM"
+b:Sc/ElectronScorer01/DICOMOutput32BitsPerPixel = "True"
+s:Sc/ElectronScorer01/Color              = "green"
+s:Sc/ElectronScorer01/DrawingStyle       = "WireFrame"
+
+# Phase space scoring
+s:Sc/PhaseScorer01/Parent           = "World"
+s:Sc/PhaseScorer01/Component             = "MyBox01"
+s:Sc/PhaseScorer01/Quantity              = "PhaseSpace"
+s:Sc/PhaseScorer01/Surface               = "MyBox01/ZPlusSurface"
+i:Sc/PhaseScorer01/OutputBufferSize      = 1000
+b:Sc/PhaseScorer01/IncludeParentID       = "True"
+b:Sc/PhaseScorer01/IncludeCreatorProcess = "True"
+b:Sc/PhaseScorer01/IncludeVertexInfo     = "True"
+sv:Sc/PhaseScorer01/OnlyIncludeParticlesNamed = 1 "e-"
+s:Sc/PhaseScorer01/OutputFolder          = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/PhaseScorer01/OutputFile            = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/electron_phasespace_ref_slice01"
+b:Sc/PhaseScorer01/OutputToConsole       = "True"
+s:Sc/PhaseScorer01/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/PhaseScorer01/OutputType            = "ASCII"
+i:Sc/PhaseScorer01/BounceLimit           = 1000000
+
+
+
+    
+###################################################
+# Scorer 02
+###################################################
+
+# Dose Scoring
+s:Sc/Dose02/Parent     = "World"
+s:Sc/Dose02/Quantity       = "DoseToMedium"
+s:Sc/Dose02/Component      = "MyBox02"
+#s:Sc/Dose02/Surface        = "MyBox02/ZPlusSurface"
+i:Sc/Dose02/XBins          = 30
+i:Sc/Dose02/YBins          = 30
+i:Sc/Dose02/ZBins          = 1
+s:Sc/Dose02/OutputFolder   = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/Dose02/OutputFile     = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/doseout_myplane_slice02"
+b:Sc/Dose02/OutputToConsole           = "False"
+s:Sc/Dose02/IfOutputFileAlreadyExists = "Overwrite"
+sv:Sc/Dose02/Report        = 2 "mean" "standard_deviation"
+s:Sc/Dose02/OutputType     = "DICOM"
+b:Sc/Dose02/DICOMOutput32BitsPerPixel = "True"
+
+# Electron origin scoring
+s:Sc/ElectronScorer02/Parent           = "World"
+s:Sc/ElectronScorer02/Quantity           = "OriginCount"
+s:Sc/ElectronScorer02/Component          = "MyBox02"
+#s:Sc/ElectronScorer02/Surface            = "MyBox02/ZPlusSurface"
+i:Sc/ElectronScorer02/OutputBufferSize   = 1000
+b:Sc/ElectronScorer02/IncludeParentID    = "True"
+b:Sc/ElectronScorer02/IncludeCreatorProcess = "True"
+b:Sc/ElectronScorer02/IncludeVertexInfo  = "True"
+i:Sc/ElectronScorer02/XBins              = 30
+i:Sc/ElectronScorer02/YBins              = 30
+i:Sc/ElectronScorer02/ZBins              = 1
+sv:Sc/ElectronScorer02/OnlyIncludeParticlesNamed = 1 "e-"
+s:Sc/ElectronScorer02/OutputFolder       = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/ElectronScorer02/OutputFile         = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/electrondistribution_ref_slice02"
+b:Sc/ElectronScorer02/OutputToConsole    = "False"
+s:Sc/ElectronScorer02/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/ElectronScorer02/OutputType         = "DICOM"
+b:Sc/ElectronScorer02/DICOMOutput32BitsPerPixel = "True"
+s:Sc/ElectronScorer02/Color              = "green"
+s:Sc/ElectronScorer02/DrawingStyle       = "WireFrame"
+
+# Phase space scoring
+s:Sc/PhaseScorer02/Parent           = "World"
+s:Sc/PhaseScorer02/Component             = "MyBox02"
+s:Sc/PhaseScorer02/Quantity              = "PhaseSpace"
+s:Sc/PhaseScorer02/Surface               = "MyBox02/ZPlusSurface"
+i:Sc/PhaseScorer02/OutputBufferSize      = 1000
+b:Sc/PhaseScorer02/IncludeParentID       = "True"
+b:Sc/PhaseScorer02/IncludeCreatorProcess = "True"
+b:Sc/PhaseScorer02/IncludeVertexInfo     = "True"
+sv:Sc/PhaseScorer02/OnlyIncludeParticlesNamed = 1 "e-"
+s:Sc/PhaseScorer02/OutputFolder          = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/PhaseScorer02/OutputFile            = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/electron_phasespace_ref_slice02"
+b:Sc/PhaseScorer02/OutputToConsole       = "True"
+s:Sc/PhaseScorer02/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/PhaseScorer02/OutputType            = "ASCII"
+i:Sc/PhaseScorer02/BounceLimit           = 1000000
+
+
+
+    
+###################################################
+# Scorer 03
+###################################################
+
+# Dose Scoring
+s:Sc/Dose03/Parent     = "World"
+s:Sc/Dose03/Quantity       = "DoseToMedium"
+s:Sc/Dose03/Component      = "MyBox03"
+#s:Sc/Dose03/Surface        = "MyBox03/ZPlusSurface"
+i:Sc/Dose03/XBins          = 30
+i:Sc/Dose03/YBins          = 30
+i:Sc/Dose03/ZBins          = 1
+s:Sc/Dose03/OutputFolder   = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/Dose03/OutputFile     = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/doseout_myplane_slice03"
+b:Sc/Dose03/OutputToConsole           = "False"
+s:Sc/Dose03/IfOutputFileAlreadyExists = "Overwrite"
+sv:Sc/Dose03/Report        = 2 "mean" "standard_deviation"
+s:Sc/Dose03/OutputType     = "DICOM"
+b:Sc/Dose03/DICOMOutput32BitsPerPixel = "True"
+
+# Electron origin scoring
+s:Sc/ElectronScorer03/Parent           = "World"
+s:Sc/ElectronScorer03/Quantity           = "OriginCount"
+s:Sc/ElectronScorer03/Component          = "MyBox03"
+#s:Sc/ElectronScorer03/Surface            = "MyBox03/ZPlusSurface"
+i:Sc/ElectronScorer03/OutputBufferSize   = 1000
+b:Sc/ElectronScorer03/IncludeParentID    = "True"
+b:Sc/ElectronScorer03/IncludeCreatorProcess = "True"
+b:Sc/ElectronScorer03/IncludeVertexInfo  = "True"
+i:Sc/ElectronScorer03/XBins              = 30
+i:Sc/ElectronScorer03/YBins              = 30
+i:Sc/ElectronScorer03/ZBins              = 1
+sv:Sc/ElectronScorer03/OnlyIncludeParticlesNamed = 1 "e-"
+s:Sc/ElectronScorer03/OutputFolder       = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/ElectronScorer03/OutputFile         = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/electrondistribution_ref_slice03"
+b:Sc/ElectronScorer03/OutputToConsole    = "False"
+s:Sc/ElectronScorer03/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/ElectronScorer03/OutputType         = "DICOM"
+b:Sc/ElectronScorer03/DICOMOutput32BitsPerPixel = "True"
+s:Sc/ElectronScorer03/Color              = "green"
+s:Sc/ElectronScorer03/DrawingStyle       = "WireFrame"
+
+# Phase space scoring
+s:Sc/PhaseScorer03/Parent           = "World"
+s:Sc/PhaseScorer03/Component             = "MyBox03"
+s:Sc/PhaseScorer03/Quantity              = "PhaseSpace"
+s:Sc/PhaseScorer03/Surface               = "MyBox03/ZPlusSurface"
+i:Sc/PhaseScorer03/OutputBufferSize      = 1000
+b:Sc/PhaseScorer03/IncludeParentID       = "True"
+b:Sc/PhaseScorer03/IncludeCreatorProcess = "True"
+b:Sc/PhaseScorer03/IncludeVertexInfo     = "True"
+sv:Sc/PhaseScorer03/OnlyIncludeParticlesNamed = 1 "e-"
+s:Sc/PhaseScorer03/OutputFolder          = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/PhaseScorer03/OutputFile            = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/electron_phasespace_ref_slice03"
+b:Sc/PhaseScorer03/OutputToConsole       = "True"
+s:Sc/PhaseScorer03/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/PhaseScorer03/OutputType            = "ASCII"
+i:Sc/PhaseScorer03/BounceLimit           = 1000000
+
+
+
+    
+###################################################
+# Scorer 04
+###################################################
+
+# Dose Scoring
+s:Sc/Dose04/Parent     = "World"
+s:Sc/Dose04/Quantity       = "DoseToMedium"
+s:Sc/Dose04/Component      = "MyBox04"
+#s:Sc/Dose04/Surface        = "MyBox04/ZPlusSurface"
+i:Sc/Dose04/XBins          = 30
+i:Sc/Dose04/YBins          = 30
+i:Sc/Dose04/ZBins          = 1
+s:Sc/Dose04/OutputFolder   = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/Dose04/OutputFile     = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/doseout_myplane_slice04"
+b:Sc/Dose04/OutputToConsole           = "False"
+s:Sc/Dose04/IfOutputFileAlreadyExists = "Overwrite"
+sv:Sc/Dose04/Report        = 2 "mean" "standard_deviation"
+s:Sc/Dose04/OutputType     = "DICOM"
+b:Sc/Dose04/DICOMOutput32BitsPerPixel = "True"
+
+# Electron origin scoring
+s:Sc/ElectronScorer04/Parent           = "World"
+s:Sc/ElectronScorer04/Quantity           = "OriginCount"
+s:Sc/ElectronScorer04/Component          = "MyBox04"
+#s:Sc/ElectronScorer04/Surface            = "MyBox04/ZPlusSurface"
+i:Sc/ElectronScorer04/OutputBufferSize   = 1000
+b:Sc/ElectronScorer04/IncludeParentID    = "True"
+b:Sc/ElectronScorer04/IncludeCreatorProcess = "True"
+b:Sc/ElectronScorer04/IncludeVertexInfo  = "True"
+i:Sc/ElectronScorer04/XBins              = 30
+i:Sc/ElectronScorer04/YBins              = 30
+i:Sc/ElectronScorer04/ZBins              = 1
+sv:Sc/ElectronScorer04/OnlyIncludeParticlesNamed = 1 "e-"
+s:Sc/ElectronScorer04/OutputFolder       = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/ElectronScorer04/OutputFile         = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/electrondistribution_ref_slice04"
+b:Sc/ElectronScorer04/OutputToConsole    = "False"
+s:Sc/ElectronScorer04/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/ElectronScorer04/OutputType         = "DICOM"
+b:Sc/ElectronScorer04/DICOMOutput32BitsPerPixel = "True"
+s:Sc/ElectronScorer04/Color              = "green"
+s:Sc/ElectronScorer04/DrawingStyle       = "WireFrame"
+
+# Phase space scoring
+s:Sc/PhaseScorer04/Parent           = "World"
+s:Sc/PhaseScorer04/Component             = "MyBox04"
+s:Sc/PhaseScorer04/Quantity              = "PhaseSpace"
+s:Sc/PhaseScorer04/Surface               = "MyBox04/ZPlusSurface"
+i:Sc/PhaseScorer04/OutputBufferSize      = 1000
+b:Sc/PhaseScorer04/IncludeParentID       = "True"
+b:Sc/PhaseScorer04/IncludeCreatorProcess = "True"
+b:Sc/PhaseScorer04/IncludeVertexInfo     = "True"
+sv:Sc/PhaseScorer04/OnlyIncludeParticlesNamed = 1 "e-"
+s:Sc/PhaseScorer04/OutputFolder          = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/PhaseScorer04/OutputFile            = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/electron_phasespace_ref_slice04"
+b:Sc/PhaseScorer04/OutputToConsole       = "True"
+s:Sc/PhaseScorer04/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/PhaseScorer04/OutputType            = "ASCII"
+i:Sc/PhaseScorer04/BounceLimit           = 1000000
+
+
+
+    
+###################################################
+# Scorer 05
+###################################################
+
+# Dose Scoring
+s:Sc/Dose05/Parent     = "World"
+s:Sc/Dose05/Quantity       = "DoseToMedium"
+s:Sc/Dose05/Component      = "MyBox05"
+#s:Sc/Dose05/Surface        = "MyBox05/ZPlusSurface"
+i:Sc/Dose05/XBins          = 30
+i:Sc/Dose05/YBins          = 30
+i:Sc/Dose05/ZBins          = 1
+s:Sc/Dose05/OutputFolder   = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/Dose05/OutputFile     = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/doseout_myplane_slice05"
+b:Sc/Dose05/OutputToConsole           = "False"
+s:Sc/Dose05/IfOutputFileAlreadyExists = "Overwrite"
+sv:Sc/Dose05/Report        = 2 "mean" "standard_deviation"
+s:Sc/Dose05/OutputType     = "DICOM"
+b:Sc/Dose05/DICOMOutput32BitsPerPixel = "True"
+
+# Electron origin scoring
+s:Sc/ElectronScorer05/Parent           = "World"
+s:Sc/ElectronScorer05/Quantity           = "OriginCount"
+s:Sc/ElectronScorer05/Component          = "MyBox05"
+#s:Sc/ElectronScorer05/Surface            = "MyBox05/ZPlusSurface"
+i:Sc/ElectronScorer05/OutputBufferSize   = 1000
+b:Sc/ElectronScorer05/IncludeParentID    = "True"
+b:Sc/ElectronScorer05/IncludeCreatorProcess = "True"
+b:Sc/ElectronScorer05/IncludeVertexInfo  = "True"
+i:Sc/ElectronScorer05/XBins              = 30
+i:Sc/ElectronScorer05/YBins              = 30
+i:Sc/ElectronScorer05/ZBins              = 1
+sv:Sc/ElectronScorer05/OnlyIncludeParticlesNamed = 1 "e-"
+s:Sc/ElectronScorer05/OutputFolder       = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/ElectronScorer05/OutputFile         = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/electrondistribution_ref_slice05"
+b:Sc/ElectronScorer05/OutputToConsole    = "False"
+s:Sc/ElectronScorer05/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/ElectronScorer05/OutputType         = "DICOM"
+b:Sc/ElectronScorer05/DICOMOutput32BitsPerPixel = "True"
+s:Sc/ElectronScorer05/Color              = "green"
+s:Sc/ElectronScorer05/DrawingStyle       = "WireFrame"
+
+# Phase space scoring
+s:Sc/PhaseScorer05/Parent           = "World"
+s:Sc/PhaseScorer05/Component             = "MyBox05"
+s:Sc/PhaseScorer05/Quantity              = "PhaseSpace"
+s:Sc/PhaseScorer05/Surface               = "MyBox05/ZPlusSurface"
+i:Sc/PhaseScorer05/OutputBufferSize      = 1000
+b:Sc/PhaseScorer05/IncludeParentID       = "True"
+b:Sc/PhaseScorer05/IncludeCreatorProcess = "True"
+b:Sc/PhaseScorer05/IncludeVertexInfo     = "True"
+sv:Sc/PhaseScorer05/OnlyIncludeParticlesNamed = 1 "e-"
+s:Sc/PhaseScorer05/OutputFolder          = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/PhaseScorer05/OutputFile            = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/electron_phasespace_ref_slice05"
+b:Sc/PhaseScorer05/OutputToConsole       = "True"
+s:Sc/PhaseScorer05/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/PhaseScorer05/OutputType            = "ASCII"
+i:Sc/PhaseScorer05/BounceLimit           = 1000000
+
+
+
+    
+###################################################
+# Scorer 06
+###################################################
+
+# Dose Scoring
+s:Sc/Dose06/Parent     = "World"
+s:Sc/Dose06/Quantity       = "DoseToMedium"
+s:Sc/Dose06/Component      = "MyBox06"
+#s:Sc/Dose06/Surface        = "MyBox06/ZPlusSurface"
+i:Sc/Dose06/XBins          = 30
+i:Sc/Dose06/YBins          = 30
+i:Sc/Dose06/ZBins          = 1
+s:Sc/Dose06/OutputFolder   = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/Dose06/OutputFile     = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/doseout_myplane_slice06"
+b:Sc/Dose06/OutputToConsole           = "False"
+s:Sc/Dose06/IfOutputFileAlreadyExists = "Overwrite"
+sv:Sc/Dose06/Report        = 2 "mean" "standard_deviation"
+s:Sc/Dose06/OutputType     = "DICOM"
+b:Sc/Dose06/DICOMOutput32BitsPerPixel = "True"
+
+# Electron origin scoring
+s:Sc/ElectronScorer06/Parent           = "World"
+s:Sc/ElectronScorer06/Quantity           = "OriginCount"
+s:Sc/ElectronScorer06/Component          = "MyBox06"
+#s:Sc/ElectronScorer06/Surface            = "MyBox06/ZPlusSurface"
+i:Sc/ElectronScorer06/OutputBufferSize   = 1000
+b:Sc/ElectronScorer06/IncludeParentID    = "True"
+b:Sc/ElectronScorer06/IncludeCreatorProcess = "True"
+b:Sc/ElectronScorer06/IncludeVertexInfo  = "True"
+i:Sc/ElectronScorer06/XBins              = 30
+i:Sc/ElectronScorer06/YBins              = 30
+i:Sc/ElectronScorer06/ZBins              = 1
+sv:Sc/ElectronScorer06/OnlyIncludeParticlesNamed = 1 "e-"
+s:Sc/ElectronScorer06/OutputFolder       = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/ElectronScorer06/OutputFile         = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/electrondistribution_ref_slice06"
+b:Sc/ElectronScorer06/OutputToConsole    = "False"
+s:Sc/ElectronScorer06/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/ElectronScorer06/OutputType         = "DICOM"
+b:Sc/ElectronScorer06/DICOMOutput32BitsPerPixel = "True"
+s:Sc/ElectronScorer06/Color              = "green"
+s:Sc/ElectronScorer06/DrawingStyle       = "WireFrame"
+
+# Phase space scoring
+s:Sc/PhaseScorer06/Parent           = "World"
+s:Sc/PhaseScorer06/Component             = "MyBox06"
+s:Sc/PhaseScorer06/Quantity              = "PhaseSpace"
+s:Sc/PhaseScorer06/Surface               = "MyBox06/ZPlusSurface"
+i:Sc/PhaseScorer06/OutputBufferSize      = 1000
+b:Sc/PhaseScorer06/IncludeParentID       = "True"
+b:Sc/PhaseScorer06/IncludeCreatorProcess = "True"
+b:Sc/PhaseScorer06/IncludeVertexInfo     = "True"
+sv:Sc/PhaseScorer06/OnlyIncludeParticlesNamed = 1 "e-"
+s:Sc/PhaseScorer06/OutputFolder          = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/PhaseScorer06/OutputFile            = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/electron_phasespace_ref_slice06"
+b:Sc/PhaseScorer06/OutputToConsole       = "True"
+s:Sc/PhaseScorer06/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/PhaseScorer06/OutputType            = "ASCII"
+i:Sc/PhaseScorer06/BounceLimit           = 1000000
+
+
+
+    
+###################################################
+# Scorer 07
+###################################################
+
+# Dose Scoring
+s:Sc/Dose07/Parent     = "World"
+s:Sc/Dose07/Quantity       = "DoseToMedium"
+s:Sc/Dose07/Component      = "MyBox07"
+#s:Sc/Dose07/Surface        = "MyBox07/ZPlusSurface"
+i:Sc/Dose07/XBins          = 30
+i:Sc/Dose07/YBins          = 30
+i:Sc/Dose07/ZBins          = 1
+s:Sc/Dose07/OutputFolder   = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/Dose07/OutputFile     = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/doseout_myplane_slice07"
+b:Sc/Dose07/OutputToConsole           = "False"
+s:Sc/Dose07/IfOutputFileAlreadyExists = "Overwrite"
+sv:Sc/Dose07/Report        = 2 "mean" "standard_deviation"
+s:Sc/Dose07/OutputType     = "DICOM"
+b:Sc/Dose07/DICOMOutput32BitsPerPixel = "True"
+
+# Electron origin scoring
+s:Sc/ElectronScorer07/Parent           = "World"
+s:Sc/ElectronScorer07/Quantity           = "OriginCount"
+s:Sc/ElectronScorer07/Component          = "MyBox07"
+#s:Sc/ElectronScorer07/Surface            = "MyBox07/ZPlusSurface"
+i:Sc/ElectronScorer07/OutputBufferSize   = 1000
+b:Sc/ElectronScorer07/IncludeParentID    = "True"
+b:Sc/ElectronScorer07/IncludeCreatorProcess = "True"
+b:Sc/ElectronScorer07/IncludeVertexInfo  = "True"
+i:Sc/ElectronScorer07/XBins              = 30
+i:Sc/ElectronScorer07/YBins              = 30
+i:Sc/ElectronScorer07/ZBins              = 1
+sv:Sc/ElectronScorer07/OnlyIncludeParticlesNamed = 1 "e-"
+s:Sc/ElectronScorer07/OutputFolder       = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/ElectronScorer07/OutputFile         = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/electrondistribution_ref_slice07"
+b:Sc/ElectronScorer07/OutputToConsole    = "False"
+s:Sc/ElectronScorer07/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/ElectronScorer07/OutputType         = "DICOM"
+b:Sc/ElectronScorer07/DICOMOutput32BitsPerPixel = "True"
+s:Sc/ElectronScorer07/Color              = "green"
+s:Sc/ElectronScorer07/DrawingStyle       = "WireFrame"
+
+# Phase space scoring
+s:Sc/PhaseScorer07/Parent           = "World"
+s:Sc/PhaseScorer07/Component             = "MyBox07"
+s:Sc/PhaseScorer07/Quantity              = "PhaseSpace"
+s:Sc/PhaseScorer07/Surface               = "MyBox07/ZPlusSurface"
+i:Sc/PhaseScorer07/OutputBufferSize      = 1000
+b:Sc/PhaseScorer07/IncludeParentID       = "True"
+b:Sc/PhaseScorer07/IncludeCreatorProcess = "True"
+b:Sc/PhaseScorer07/IncludeVertexInfo     = "True"
+sv:Sc/PhaseScorer07/OnlyIncludeParticlesNamed = 1 "e-"
+s:Sc/PhaseScorer07/OutputFolder          = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/PhaseScorer07/OutputFile            = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/electron_phasespace_ref_slice07"
+b:Sc/PhaseScorer07/OutputToConsole       = "True"
+s:Sc/PhaseScorer07/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/PhaseScorer07/OutputType            = "ASCII"
+i:Sc/PhaseScorer07/BounceLimit           = 1000000
+
+
+
+    
+###################################################
+# Scorer 08
+###################################################
+
+# Dose Scoring
+s:Sc/Dose08/Parent     = "World"
+s:Sc/Dose08/Quantity       = "DoseToMedium"
+s:Sc/Dose08/Component      = "MyBox08"
+#s:Sc/Dose08/Surface        = "MyBox08/ZPlusSurface"
+i:Sc/Dose08/XBins          = 30
+i:Sc/Dose08/YBins          = 30
+i:Sc/Dose08/ZBins          = 1
+s:Sc/Dose08/OutputFolder   = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/Dose08/OutputFile     = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/doseout_myplane_slice08"
+b:Sc/Dose08/OutputToConsole           = "False"
+s:Sc/Dose08/IfOutputFileAlreadyExists = "Overwrite"
+sv:Sc/Dose08/Report        = 2 "mean" "standard_deviation"
+s:Sc/Dose08/OutputType     = "DICOM"
+b:Sc/Dose08/DICOMOutput32BitsPerPixel = "True"
+
+# Electron origin scoring
+s:Sc/ElectronScorer08/Parent           = "World"
+s:Sc/ElectronScorer08/Quantity           = "OriginCount"
+s:Sc/ElectronScorer08/Component          = "MyBox08"
+#s:Sc/ElectronScorer08/Surface            = "MyBox08/ZPlusSurface"
+i:Sc/ElectronScorer08/OutputBufferSize   = 1000
+b:Sc/ElectronScorer08/IncludeParentID    = "True"
+b:Sc/ElectronScorer08/IncludeCreatorProcess = "True"
+b:Sc/ElectronScorer08/IncludeVertexInfo  = "True"
+i:Sc/ElectronScorer08/XBins              = 30
+i:Sc/ElectronScorer08/YBins              = 30
+i:Sc/ElectronScorer08/ZBins              = 1
+sv:Sc/ElectronScorer08/OnlyIncludeParticlesNamed = 1 "e-"
+s:Sc/ElectronScorer08/OutputFolder       = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/ElectronScorer08/OutputFile         = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/electrondistribution_ref_slice08"
+b:Sc/ElectronScorer08/OutputToConsole    = "False"
+s:Sc/ElectronScorer08/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/ElectronScorer08/OutputType         = "DICOM"
+b:Sc/ElectronScorer08/DICOMOutput32BitsPerPixel = "True"
+s:Sc/ElectronScorer08/Color              = "green"
+s:Sc/ElectronScorer08/DrawingStyle       = "WireFrame"
+
+# Phase space scoring
+s:Sc/PhaseScorer08/Parent           = "World"
+s:Sc/PhaseScorer08/Component             = "MyBox08"
+s:Sc/PhaseScorer08/Quantity              = "PhaseSpace"
+s:Sc/PhaseScorer08/Surface               = "MyBox08/ZPlusSurface"
+i:Sc/PhaseScorer08/OutputBufferSize      = 1000
+b:Sc/PhaseScorer08/IncludeParentID       = "True"
+b:Sc/PhaseScorer08/IncludeCreatorProcess = "True"
+b:Sc/PhaseScorer08/IncludeVertexInfo     = "True"
+sv:Sc/PhaseScorer08/OnlyIncludeParticlesNamed = 1 "e-"
+s:Sc/PhaseScorer08/OutputFolder          = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/PhaseScorer08/OutputFile            = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/electron_phasespace_ref_slice08"
+b:Sc/PhaseScorer08/OutputToConsole       = "True"
+s:Sc/PhaseScorer08/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/PhaseScorer08/OutputType            = "ASCII"
+i:Sc/PhaseScorer08/BounceLimit           = 1000000
+
+
+
+    
+###################################################
+# Scorer 09
+###################################################
+
+# Dose Scoring
+s:Sc/Dose09/Parent     = "World"
+s:Sc/Dose09/Quantity       = "DoseToMedium"
+s:Sc/Dose09/Component      = "MyBox09"
+#s:Sc/Dose09/Surface        = "MyBox09/ZPlusSurface"
+i:Sc/Dose09/XBins          = 30
+i:Sc/Dose09/YBins          = 30
+i:Sc/Dose09/ZBins          = 1
+s:Sc/Dose09/OutputFolder   = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/Dose09/OutputFile     = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/doseout_myplane_slice09"
+b:Sc/Dose09/OutputToConsole           = "False"
+s:Sc/Dose09/IfOutputFileAlreadyExists = "Overwrite"
+sv:Sc/Dose09/Report        = 2 "mean" "standard_deviation"
+s:Sc/Dose09/OutputType     = "DICOM"
+b:Sc/Dose09/DICOMOutput32BitsPerPixel = "True"
+
+# Electron origin scoring
+s:Sc/ElectronScorer09/Parent           = "World"
+s:Sc/ElectronScorer09/Quantity           = "OriginCount"
+s:Sc/ElectronScorer09/Component          = "MyBox09"
+#s:Sc/ElectronScorer09/Surface            = "MyBox09/ZPlusSurface"
+i:Sc/ElectronScorer09/OutputBufferSize   = 1000
+b:Sc/ElectronScorer09/IncludeParentID    = "True"
+b:Sc/ElectronScorer09/IncludeCreatorProcess = "True"
+b:Sc/ElectronScorer09/IncludeVertexInfo  = "True"
+i:Sc/ElectronScorer09/XBins              = 30
+i:Sc/ElectronScorer09/YBins              = 30
+i:Sc/ElectronScorer09/ZBins              = 1
+sv:Sc/ElectronScorer09/OnlyIncludeParticlesNamed = 1 "e-"
+s:Sc/ElectronScorer09/OutputFolder       = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/ElectronScorer09/OutputFile         = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/electrondistribution_ref_slice09"
+b:Sc/ElectronScorer09/OutputToConsole    = "False"
+s:Sc/ElectronScorer09/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/ElectronScorer09/OutputType         = "DICOM"
+b:Sc/ElectronScorer09/DICOMOutput32BitsPerPixel = "True"
+s:Sc/ElectronScorer09/Color              = "green"
+s:Sc/ElectronScorer09/DrawingStyle       = "WireFrame"
+
+# Phase space scoring
+s:Sc/PhaseScorer09/Parent           = "World"
+s:Sc/PhaseScorer09/Component             = "MyBox09"
+s:Sc/PhaseScorer09/Quantity              = "PhaseSpace"
+s:Sc/PhaseScorer09/Surface               = "MyBox09/ZPlusSurface"
+i:Sc/PhaseScorer09/OutputBufferSize      = 1000
+b:Sc/PhaseScorer09/IncludeParentID       = "True"
+b:Sc/PhaseScorer09/IncludeCreatorProcess = "True"
+b:Sc/PhaseScorer09/IncludeVertexInfo     = "True"
+sv:Sc/PhaseScorer09/OnlyIncludeParticlesNamed = 1 "e-"
+s:Sc/PhaseScorer09/OutputFolder          = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/PhaseScorer09/OutputFile            = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/electron_phasespace_ref_slice09"
+b:Sc/PhaseScorer09/OutputToConsole       = "True"
+s:Sc/PhaseScorer09/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/PhaseScorer09/OutputType            = "ASCII"
+i:Sc/PhaseScorer09/BounceLimit           = 1000000
+
+
+
+    
+###################################################
+# Scorer 10
+###################################################
+
+# Dose Scoring
+s:Sc/Dose10/Parent     = "World"
+s:Sc/Dose10/Quantity       = "DoseToMedium"
+s:Sc/Dose10/Component      = "MyBox10"
+#s:Sc/Dose10/Surface        = "MyBox10/ZPlusSurface"
+i:Sc/Dose10/XBins          = 30
+i:Sc/Dose10/YBins          = 30
+i:Sc/Dose10/ZBins          = 1
+s:Sc/Dose10/OutputFolder   = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/Dose10/OutputFile     = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/doseout_myplane_slice10"
+b:Sc/Dose10/OutputToConsole           = "False"
+s:Sc/Dose10/IfOutputFileAlreadyExists = "Overwrite"
+sv:Sc/Dose10/Report        = 2 "mean" "standard_deviation"
+s:Sc/Dose10/OutputType     = "DICOM"
+b:Sc/Dose10/DICOMOutput32BitsPerPixel = "True"
+
+# Electron origin scoring
+s:Sc/ElectronScorer10/Parent           = "World"
+s:Sc/ElectronScorer10/Quantity           = "OriginCount"
+s:Sc/ElectronScorer10/Component          = "MyBox10"
+#s:Sc/ElectronScorer10/Surface            = "MyBox10/ZPlusSurface"
+i:Sc/ElectronScorer10/OutputBufferSize   = 1000
+b:Sc/ElectronScorer10/IncludeParentID    = "True"
+b:Sc/ElectronScorer10/IncludeCreatorProcess = "True"
+b:Sc/ElectronScorer10/IncludeVertexInfo  = "True"
+i:Sc/ElectronScorer10/XBins              = 30
+i:Sc/ElectronScorer10/YBins              = 30
+i:Sc/ElectronScorer10/ZBins              = 1
+sv:Sc/ElectronScorer10/OnlyIncludeParticlesNamed = 1 "e-"
+s:Sc/ElectronScorer10/OutputFolder       = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/ElectronScorer10/OutputFile         = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/electrondistribution_ref_slice10"
+b:Sc/ElectronScorer10/OutputToConsole    = "False"
+s:Sc/ElectronScorer10/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/ElectronScorer10/OutputType         = "DICOM"
+b:Sc/ElectronScorer10/DICOMOutput32BitsPerPixel = "True"
+s:Sc/ElectronScorer10/Color              = "green"
+s:Sc/ElectronScorer10/DrawingStyle       = "WireFrame"
+
+# Phase space scoring
+s:Sc/PhaseScorer10/Parent           = "World"
+s:Sc/PhaseScorer10/Component             = "MyBox10"
+s:Sc/PhaseScorer10/Quantity              = "PhaseSpace"
+s:Sc/PhaseScorer10/Surface               = "MyBox10/ZPlusSurface"
+i:Sc/PhaseScorer10/OutputBufferSize      = 1000
+b:Sc/PhaseScorer10/IncludeParentID       = "True"
+b:Sc/PhaseScorer10/IncludeCreatorProcess = "True"
+b:Sc/PhaseScorer10/IncludeVertexInfo     = "True"
+sv:Sc/PhaseScorer10/OnlyIncludeParticlesNamed = 1 "e-"
+s:Sc/PhaseScorer10/OutputFolder          = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/PhaseScorer10/OutputFile            = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/electron_phasespace_ref_slice10"
+b:Sc/PhaseScorer10/OutputToConsole       = "True"
+s:Sc/PhaseScorer10/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/PhaseScorer10/OutputType            = "ASCII"
+i:Sc/PhaseScorer10/BounceLimit           = 1000000
+
+
+
+    
+###################################################
+# Scorer 11
+###################################################
+
+# Dose Scoring
+s:Sc/Dose11/Parent     = "World"
+s:Sc/Dose11/Quantity       = "DoseToMedium"
+s:Sc/Dose11/Component      = "MyBox11"
+#s:Sc/Dose11/Surface        = "MyBox11/ZPlusSurface"
+i:Sc/Dose11/XBins          = 30
+i:Sc/Dose11/YBins          = 30
+i:Sc/Dose11/ZBins          = 1
+s:Sc/Dose11/OutputFolder   = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/Dose11/OutputFile     = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/doseout_myplane_slice11"
+b:Sc/Dose11/OutputToConsole           = "False"
+s:Sc/Dose11/IfOutputFileAlreadyExists = "Overwrite"
+sv:Sc/Dose11/Report        = 2 "mean" "standard_deviation"
+s:Sc/Dose11/OutputType     = "DICOM"
+b:Sc/Dose11/DICOMOutput32BitsPerPixel = "True"
+
+# Electron origin scoring
+s:Sc/ElectronScorer11/Parent           = "World"
+s:Sc/ElectronScorer11/Quantity           = "OriginCount"
+s:Sc/ElectronScorer11/Component          = "MyBox11"
+#s:Sc/ElectronScorer11/Surface            = "MyBox11/ZPlusSurface"
+i:Sc/ElectronScorer11/OutputBufferSize   = 1000
+b:Sc/ElectronScorer11/IncludeParentID    = "True"
+b:Sc/ElectronScorer11/IncludeCreatorProcess = "True"
+b:Sc/ElectronScorer11/IncludeVertexInfo  = "True"
+i:Sc/ElectronScorer11/XBins              = 30
+i:Sc/ElectronScorer11/YBins              = 30
+i:Sc/ElectronScorer11/ZBins              = 1
+sv:Sc/ElectronScorer11/OnlyIncludeParticlesNamed = 1 "e-"
+s:Sc/ElectronScorer11/OutputFolder       = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/ElectronScorer11/OutputFile         = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/electrondistribution_ref_slice11"
+b:Sc/ElectronScorer11/OutputToConsole    = "False"
+s:Sc/ElectronScorer11/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/ElectronScorer11/OutputType         = "DICOM"
+b:Sc/ElectronScorer11/DICOMOutput32BitsPerPixel = "True"
+s:Sc/ElectronScorer11/Color              = "green"
+s:Sc/ElectronScorer11/DrawingStyle       = "WireFrame"
+
+# Phase space scoring
+s:Sc/PhaseScorer11/Parent           = "World"
+s:Sc/PhaseScorer11/Component             = "MyBox11"
+s:Sc/PhaseScorer11/Quantity              = "PhaseSpace"
+s:Sc/PhaseScorer11/Surface               = "MyBox11/ZPlusSurface"
+i:Sc/PhaseScorer11/OutputBufferSize      = 1000
+b:Sc/PhaseScorer11/IncludeParentID       = "True"
+b:Sc/PhaseScorer11/IncludeCreatorProcess = "True"
+b:Sc/PhaseScorer11/IncludeVertexInfo     = "True"
+sv:Sc/PhaseScorer11/OnlyIncludeParticlesNamed = 1 "e-"
+s:Sc/PhaseScorer11/OutputFolder          = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/PhaseScorer11/OutputFile            = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/electron_phasespace_ref_slice11"
+b:Sc/PhaseScorer11/OutputToConsole       = "True"
+s:Sc/PhaseScorer11/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/PhaseScorer11/OutputType            = "ASCII"
+i:Sc/PhaseScorer11/BounceLimit           = 1000000
+
+
+
+    
+###################################################
+# Scorer 12
+###################################################
+
+# Dose Scoring
+s:Sc/Dose12/Parent     = "World"
+s:Sc/Dose12/Quantity       = "DoseToMedium"
+s:Sc/Dose12/Component      = "MyBox12"
+#s:Sc/Dose12/Surface        = "MyBox12/ZPlusSurface"
+i:Sc/Dose12/XBins          = 30
+i:Sc/Dose12/YBins          = 30
+i:Sc/Dose12/ZBins          = 1
+s:Sc/Dose12/OutputFolder   = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/Dose12/OutputFile     = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/doseout_myplane_slice12"
+b:Sc/Dose12/OutputToConsole           = "False"
+s:Sc/Dose12/IfOutputFileAlreadyExists = "Overwrite"
+sv:Sc/Dose12/Report        = 2 "mean" "standard_deviation"
+s:Sc/Dose12/OutputType     = "DICOM"
+b:Sc/Dose12/DICOMOutput32BitsPerPixel = "True"
+
+# Electron origin scoring
+s:Sc/ElectronScorer12/Parent           = "World"
+s:Sc/ElectronScorer12/Quantity           = "OriginCount"
+s:Sc/ElectronScorer12/Component          = "MyBox12"
+#s:Sc/ElectronScorer12/Surface            = "MyBox12/ZPlusSurface"
+i:Sc/ElectronScorer12/OutputBufferSize   = 1000
+b:Sc/ElectronScorer12/IncludeParentID    = "True"
+b:Sc/ElectronScorer12/IncludeCreatorProcess = "True"
+b:Sc/ElectronScorer12/IncludeVertexInfo  = "True"
+i:Sc/ElectronScorer12/XBins              = 30
+i:Sc/ElectronScorer12/YBins              = 30
+i:Sc/ElectronScorer12/ZBins              = 1
+sv:Sc/ElectronScorer12/OnlyIncludeParticlesNamed = 1 "e-"
+s:Sc/ElectronScorer12/OutputFolder       = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/ElectronScorer12/OutputFile         = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/electrondistribution_ref_slice12"
+b:Sc/ElectronScorer12/OutputToConsole    = "False"
+s:Sc/ElectronScorer12/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/ElectronScorer12/OutputType         = "DICOM"
+b:Sc/ElectronScorer12/DICOMOutput32BitsPerPixel = "True"
+s:Sc/ElectronScorer12/Color              = "green"
+s:Sc/ElectronScorer12/DrawingStyle       = "WireFrame"
+
+# Phase space scoring
+s:Sc/PhaseScorer12/Parent           = "World"
+s:Sc/PhaseScorer12/Component             = "MyBox12"
+s:Sc/PhaseScorer12/Quantity              = "PhaseSpace"
+s:Sc/PhaseScorer12/Surface               = "MyBox12/ZPlusSurface"
+i:Sc/PhaseScorer12/OutputBufferSize      = 1000
+b:Sc/PhaseScorer12/IncludeParentID       = "True"
+b:Sc/PhaseScorer12/IncludeCreatorProcess = "True"
+b:Sc/PhaseScorer12/IncludeVertexInfo     = "True"
+sv:Sc/PhaseScorer12/OnlyIncludeParticlesNamed = 1 "e-"
+s:Sc/PhaseScorer12/OutputFolder          = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/PhaseScorer12/OutputFile            = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/electron_phasespace_ref_slice12"
+b:Sc/PhaseScorer12/OutputToConsole       = "True"
+s:Sc/PhaseScorer12/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/PhaseScorer12/OutputType            = "ASCII"
+i:Sc/PhaseScorer12/BounceLimit           = 1000000
+
+
+
+    
+###################################################
+# Scorer 13
+###################################################
+
+# Dose Scoring
+s:Sc/Dose13/Parent     = "World"
+s:Sc/Dose13/Quantity       = "DoseToMedium"
+s:Sc/Dose13/Component      = "MyBox13"
+#s:Sc/Dose13/Surface        = "MyBox13/ZPlusSurface"
+i:Sc/Dose13/XBins          = 30
+i:Sc/Dose13/YBins          = 30
+i:Sc/Dose13/ZBins          = 1
+s:Sc/Dose13/OutputFolder   = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/Dose13/OutputFile     = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/doseout_myplane_slice13"
+b:Sc/Dose13/OutputToConsole           = "False"
+s:Sc/Dose13/IfOutputFileAlreadyExists = "Overwrite"
+sv:Sc/Dose13/Report        = 2 "mean" "standard_deviation"
+s:Sc/Dose13/OutputType     = "DICOM"
+b:Sc/Dose13/DICOMOutput32BitsPerPixel = "True"
+
+# Electron origin scoring
+s:Sc/ElectronScorer13/Parent           = "World"
+s:Sc/ElectronScorer13/Quantity           = "OriginCount"
+s:Sc/ElectronScorer13/Component          = "MyBox13"
+#s:Sc/ElectronScorer13/Surface            = "MyBox13/ZPlusSurface"
+i:Sc/ElectronScorer13/OutputBufferSize   = 1000
+b:Sc/ElectronScorer13/IncludeParentID    = "True"
+b:Sc/ElectronScorer13/IncludeCreatorProcess = "True"
+b:Sc/ElectronScorer13/IncludeVertexInfo  = "True"
+i:Sc/ElectronScorer13/XBins              = 30
+i:Sc/ElectronScorer13/YBins              = 30
+i:Sc/ElectronScorer13/ZBins              = 1
+sv:Sc/ElectronScorer13/OnlyIncludeParticlesNamed = 1 "e-"
+s:Sc/ElectronScorer13/OutputFolder       = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/ElectronScorer13/OutputFile         = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/electrondistribution_ref_slice13"
+b:Sc/ElectronScorer13/OutputToConsole    = "False"
+s:Sc/ElectronScorer13/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/ElectronScorer13/OutputType         = "DICOM"
+b:Sc/ElectronScorer13/DICOMOutput32BitsPerPixel = "True"
+s:Sc/ElectronScorer13/Color              = "green"
+s:Sc/ElectronScorer13/DrawingStyle       = "WireFrame"
+
+# Phase space scoring
+s:Sc/PhaseScorer13/Parent           = "World"
+s:Sc/PhaseScorer13/Component             = "MyBox13"
+s:Sc/PhaseScorer13/Quantity              = "PhaseSpace"
+s:Sc/PhaseScorer13/Surface               = "MyBox13/ZPlusSurface"
+i:Sc/PhaseScorer13/OutputBufferSize      = 1000
+b:Sc/PhaseScorer13/IncludeParentID       = "True"
+b:Sc/PhaseScorer13/IncludeCreatorProcess = "True"
+b:Sc/PhaseScorer13/IncludeVertexInfo     = "True"
+sv:Sc/PhaseScorer13/OnlyIncludeParticlesNamed = 1 "e-"
+s:Sc/PhaseScorer13/OutputFolder          = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/PhaseScorer13/OutputFile            = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/electron_phasespace_ref_slice13"
+b:Sc/PhaseScorer13/OutputToConsole       = "True"
+s:Sc/PhaseScorer13/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/PhaseScorer13/OutputType            = "ASCII"
+i:Sc/PhaseScorer13/BounceLimit           = 1000000
+
+
+
+    
+###################################################
+# Scorer 14
+###################################################
+
+# Dose Scoring
+s:Sc/Dose14/Parent     = "World"
+s:Sc/Dose14/Quantity       = "DoseToMedium"
+s:Sc/Dose14/Component      = "MyBox14"
+#s:Sc/Dose14/Surface        = "MyBox14/ZPlusSurface"
+i:Sc/Dose14/XBins          = 30
+i:Sc/Dose14/YBins          = 30
+i:Sc/Dose14/ZBins          = 1
+s:Sc/Dose14/OutputFolder   = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/Dose14/OutputFile     = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/doseout_myplane_slice14"
+b:Sc/Dose14/OutputToConsole           = "False"
+s:Sc/Dose14/IfOutputFileAlreadyExists = "Overwrite"
+sv:Sc/Dose14/Report        = 2 "mean" "standard_deviation"
+s:Sc/Dose14/OutputType     = "DICOM"
+b:Sc/Dose14/DICOMOutput32BitsPerPixel = "True"
+
+# Electron origin scoring
+s:Sc/ElectronScorer14/Parent           = "World"
+s:Sc/ElectronScorer14/Quantity           = "OriginCount"
+s:Sc/ElectronScorer14/Component          = "MyBox14"
+#s:Sc/ElectronScorer14/Surface            = "MyBox14/ZPlusSurface"
+i:Sc/ElectronScorer14/OutputBufferSize   = 1000
+b:Sc/ElectronScorer14/IncludeParentID    = "True"
+b:Sc/ElectronScorer14/IncludeCreatorProcess = "True"
+b:Sc/ElectronScorer14/IncludeVertexInfo  = "True"
+i:Sc/ElectronScorer14/XBins              = 30
+i:Sc/ElectronScorer14/YBins              = 30
+i:Sc/ElectronScorer14/ZBins              = 1
+sv:Sc/ElectronScorer14/OnlyIncludeParticlesNamed = 1 "e-"
+s:Sc/ElectronScorer14/OutputFolder       = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/ElectronScorer14/OutputFile         = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/electrondistribution_ref_slice14"
+b:Sc/ElectronScorer14/OutputToConsole    = "False"
+s:Sc/ElectronScorer14/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/ElectronScorer14/OutputType         = "DICOM"
+b:Sc/ElectronScorer14/DICOMOutput32BitsPerPixel = "True"
+s:Sc/ElectronScorer14/Color              = "green"
+s:Sc/ElectronScorer14/DrawingStyle       = "WireFrame"
+
+# Phase space scoring
+s:Sc/PhaseScorer14/Parent           = "World"
+s:Sc/PhaseScorer14/Component             = "MyBox14"
+s:Sc/PhaseScorer14/Quantity              = "PhaseSpace"
+s:Sc/PhaseScorer14/Surface               = "MyBox14/ZPlusSurface"
+i:Sc/PhaseScorer14/OutputBufferSize      = 1000
+b:Sc/PhaseScorer14/IncludeParentID       = "True"
+b:Sc/PhaseScorer14/IncludeCreatorProcess = "True"
+b:Sc/PhaseScorer14/IncludeVertexInfo     = "True"
+sv:Sc/PhaseScorer14/OnlyIncludeParticlesNamed = 1 "e-"
+s:Sc/PhaseScorer14/OutputFolder          = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/PhaseScorer14/OutputFile            = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/electron_phasespace_ref_slice14"
+b:Sc/PhaseScorer14/OutputToConsole       = "True"
+s:Sc/PhaseScorer14/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/PhaseScorer14/OutputType            = "ASCII"
+i:Sc/PhaseScorer14/BounceLimit           = 1000000
+
+
+
+    
+###################################################
+# Scorer 15
+###################################################
+
+# Dose Scoring
+s:Sc/Dose15/Parent     = "World"
+s:Sc/Dose15/Quantity       = "DoseToMedium"
+s:Sc/Dose15/Component      = "MyBox15"
+#s:Sc/Dose15/Surface        = "MyBox15/ZPlusSurface"
+i:Sc/Dose15/XBins          = 30
+i:Sc/Dose15/YBins          = 30
+i:Sc/Dose15/ZBins          = 1
+s:Sc/Dose15/OutputFolder   = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/Dose15/OutputFile     = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/doseout_myplane_slice15"
+b:Sc/Dose15/OutputToConsole           = "False"
+s:Sc/Dose15/IfOutputFileAlreadyExists = "Overwrite"
+sv:Sc/Dose15/Report        = 2 "mean" "standard_deviation"
+s:Sc/Dose15/OutputType     = "DICOM"
+b:Sc/Dose15/DICOMOutput32BitsPerPixel = "True"
+
+# Electron origin scoring
+s:Sc/ElectronScorer15/Parent           = "World"
+s:Sc/ElectronScorer15/Quantity           = "OriginCount"
+s:Sc/ElectronScorer15/Component          = "MyBox15"
+#s:Sc/ElectronScorer15/Surface            = "MyBox15/ZPlusSurface"
+i:Sc/ElectronScorer15/OutputBufferSize   = 1000
+b:Sc/ElectronScorer15/IncludeParentID    = "True"
+b:Sc/ElectronScorer15/IncludeCreatorProcess = "True"
+b:Sc/ElectronScorer15/IncludeVertexInfo  = "True"
+i:Sc/ElectronScorer15/XBins              = 30
+i:Sc/ElectronScorer15/YBins              = 30
+i:Sc/ElectronScorer15/ZBins              = 1
+sv:Sc/ElectronScorer15/OnlyIncludeParticlesNamed = 1 "e-"
+s:Sc/ElectronScorer15/OutputFolder       = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/ElectronScorer15/OutputFile         = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/electrondistribution_ref_slice15"
+b:Sc/ElectronScorer15/OutputToConsole    = "False"
+s:Sc/ElectronScorer15/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/ElectronScorer15/OutputType         = "DICOM"
+b:Sc/ElectronScorer15/DICOMOutput32BitsPerPixel = "True"
+s:Sc/ElectronScorer15/Color              = "green"
+s:Sc/ElectronScorer15/DrawingStyle       = "WireFrame"
+
+# Phase space scoring
+s:Sc/PhaseScorer15/Parent           = "World"
+s:Sc/PhaseScorer15/Component             = "MyBox15"
+s:Sc/PhaseScorer15/Quantity              = "PhaseSpace"
+s:Sc/PhaseScorer15/Surface               = "MyBox15/ZPlusSurface"
+i:Sc/PhaseScorer15/OutputBufferSize      = 1000
+b:Sc/PhaseScorer15/IncludeParentID       = "True"
+b:Sc/PhaseScorer15/IncludeCreatorProcess = "True"
+b:Sc/PhaseScorer15/IncludeVertexInfo     = "True"
+sv:Sc/PhaseScorer15/OnlyIncludeParticlesNamed = 1 "e-"
+s:Sc/PhaseScorer15/OutputFolder          = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/PhaseScorer15/OutputFile            = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/electron_phasespace_ref_slice15"
+b:Sc/PhaseScorer15/OutputToConsole       = "True"
+s:Sc/PhaseScorer15/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/PhaseScorer15/OutputType            = "ASCII"
+i:Sc/PhaseScorer15/BounceLimit           = 1000000
+
+

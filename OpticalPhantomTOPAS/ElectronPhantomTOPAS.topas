@@ -1,0 +1,63 @@
+includeFile = HUtoMaterialSchneider.topas
+includeFile = Geometry.topas
+includeFile = ElectronScoring.topas
+#includeFile = Visualization.topas # Include if we want to visualize
+
+#s:Ph/ListName = "Optical"
+s:Ph/ListName = "Edeposit"
+
+# s:Ph/Optical/Type     = "Geant4_Modular"
+# sv:Ph/Optical/Modules = 7 "g4em-standard_opt4" "g4h-phy_QGSP_BIC_HP" "g4decay" "g4ion-binarycascade" "g4h-elastic_HP" "g4stopping" "g4optical"
+# d:Ph/Optical/CutForGamma    = 0.04 mm
+# d:Ph/Optical/CutForElectron = 0.03 mm
+# d:Ph/Optical/CutForPositron = 0.02 mm
+# d:Ph/Optical/CutForProton   = 0.01 mm
+
+s:Ph/Edeposit/Type     = "Geant4_Modular"
+sv:Ph/Edeposit/Modules = 6 "g4em-standard_opt4" "g4h-phy_QGSP_BIC_HP" "g4decay" "g4ion-binarycascade" "g4h-elastic_HP" "g4stopping" 
+d:Ph/Edeposit/CutForGamma    = 0.04 mm
+d:Ph/Edeposit/CutForElectron = 0.03 mm
+d:Ph/Edeposit/CutForPositron = 0.02 mm
+d:Ph/Edeposit/CutForProton   = 0.01 mm
+
+b:Ph/ListProcesses = "True"
+
+# SELECT NUMBER OF RUNS
+i:So/6X/NumberOfHistoriesInRun   = 40000000 #10M events recorded at 2 mm increments across first 2 cm
+
+###################################################
+# World Coordination
+###################################################
+# World: Fixed coordination in IEC
+s:Ge/World/Type  = "TsBox"
+s:Ge/World/Material  = "G4_AIR"
+b:Ge/World/EnableOpticalProperties = "True"
+d:Ge/World/HLX       = 2.5 m
+d:Ge/World/HLY       = 2.5 m
+d:Ge/World/HLZ       = 2.5 m
+b:Ge/World/Invisible = "true"
+
+####################################################
+# Visualization # Or uncomment this section if we want to visualize
+####################################################
+# Visualization settings - Choose the visualization type (OpenGL)
+# s:Gr/MyGraphic1/Type = "OpenGL" 
+
+# b:Gr/MyGraphic1/IncludeGeometry = "True" # defaults to "True"
+# b:Gr/MyGraphic1/IncludeTrajectories = "True" # defaults to "True"
+# b:Gr/MyGraphic1/IncludeStepPoints = "True" # Show trajectory step points, defaults to "False"
+# iv:Gr/Color/lightblue = 3 175 255 255
+# b:Gr/MyGraphic1/IncludeAxes = "True" # defaults to "False"
+# s:Gr/MyGraphic1/AxesComponent = "World" # Component in which to center the axes. Defaults to World.
+
+# s:Gr/RefreshEvery = "Session" # "History", "Run" or "Session"
+# sv:Gr/MyGraphic1/VisibleWorlds = 1 "World" # "World", "All" or one or more specific world names
+# i:Gr/MyGraphic1/WindowSizeX = 600
+# i:Gr/MyGraphic1/WindowSizeY = 600
+# b:Gr/MyGraphic1/HiddenLineRemovalForGeometry = "False" # Remove hidden lines from wireframe geometries, like Geant4’s /vis/viewer/set/hiddenEdge
+
+# sv:Gr/MyGraphic1/ColorByCreatorProcessNames = 5 "eBrem" "Cerenkov" "Rayl" "eIoni" "compt" # one or more process name
+# sv:Gr/MyGraphic1/ColorByCreatorProcessColors = 5 "red" "cyan" "blue" "yellow" "magenta" # one for every process name
+
+# # b:Gr/MyGraphic1/Active = "False" # defaults to "True"
+b:Ge/QuitIfOverlapDetected = "False"

@@ -1,0 +1,22 @@
+###################################################
+Visualization 
+###################################################
+Visualization settings - Choose the visualization type (OpenGL)
+s:Gr/MyGraphic1/Type = "OpenGL" 
+
+b:Gr/MyGraphic1/IncludeGeometry = "True" # defaults to "True"
+b:Gr/MyGraphic1/IncludeTrajectories = "True" # defaults to "True"
+b:Gr/MyGraphic1/IncludeStepPoints = "True" # Show trajectory step points, defaults to "False"
+#iv:Gr/Color/lightblue = 3 175 255 255
+b:Gr/MyGraphic1/IncludeAxes = "True" # defaults to "False"
+s:Gr/MyGraphic1/AxesComponent = "World" # Component in which to center the axes. Defaults to World.
+#d:Gr/MyGraphic1/AxesSize = 3. m # size of axes
+
+s:Gr/MyGraphic1/RefreshEvery = "Session" # "History", "Run" or "Session"
+sv:Gr/MyGraphic1/VisibleWorlds = 1 "World" # "World", "All" or one or more specific world names
+i:Gr/MyGraphic1/WindowSizeX = 600
+i:Gr/MyGraphic1/WindowSizeY = 600
+b:Gr/MyGraphic1/HiddenLineRemovalForGeometry = "False" # Remove hidden lines from wireframe geometries, like Geant4’s /vis/viewer/set/hiddenEdge
+
+b:Gr/MyGraphic1/Active = "True" # defaults to "True"
+b:Ge/QuitIfOverlapDetected = "False"

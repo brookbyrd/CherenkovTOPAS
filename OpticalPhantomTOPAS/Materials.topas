@@ -1,0 +1,23 @@
+
+# Set optical properties
+# dc:Ge/ScatteringLength = 0.145137 cm
+# dc:Ge/AbsorptionLength = 9.0909 cm
+
+######################################## 
+PHANTOM MATERIAL PROPERTIES
+########################################
+b:Ma/MyWater/BuildFromMaterials = "True"
+sv:Ma/MyWater/Components = 1 "G4_WATER"
+uv:Ma/MyWater/Fractions = 1 1
+d:Ma/MyWater/Density = 1 g/cm3
+
+dv:Ma/MyWater/RefractiveIndex/Energies = 6 1.38 1.55 1.77 2.07 2.48 3.1 eV
+uv:Ma/MyWater/RefractiveIndex/Values = 6 1.333 1.333 1.333 1.333 1.333 1.333   
+# dv:Ma/MyWater/AbsLength/Energies = 6 1.38 1.55 1.77 2.07 2.48 3.1 eV
+# dv:Ma/MyWater/AbsLength/Values = 6 Ge/AbsorptionLength Ge/AbsorptionLength Ge/AbsorptionLength Ge/AbsorptionLength Ge/AbsorptionLength Ge/AbsorptionLength cm
+# dv:Ma/MyWater/Miehg/Energies = 6 1.38 1.55 1.77 2.07 2.48 3.1 eV
+# dv:Ma/MyWater/Miehg/Values = 6 Ge/ScatteringLength Ge/ScatteringLength Ge/ScatteringLength Ge/ScatteringLength Ge/ScatteringLength Ge/ScatteringLength cm
+u:Ma/MyWater/Miehg_Forward = 0.9
+u:Ma/MyWater/Miehg_Backward = 0.9
+u:Ma/MyWater/Miehg_Forward_Ratio = 1
+b:Ma/MyWater/EnableOpticalProperties = "True"
