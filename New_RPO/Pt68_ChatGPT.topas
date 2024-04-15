@@ -1,0 +1,68 @@
+# Define the geometry for WaterPhantom (PatientBox) at the isocenter
+s:Box
+  { Material = "Water",
+    Dimensions = (100, 100, 5) mm,  # 1x1x0.05 meter box
+    Position = (0, 0, 0) mm,  # At the isocenter
+    Name = "PatientBox" }
+
+# Set the optical scattering length of the patient to 0.1 cm
+p:Optical
+  { Name = "Scattering",
+    Component = "PatientBox",
+    Value = 0.1 cm }
+
+# Set the optical absorption length of the patient to 10 cm
+p:Optical
+  { Name = "Absorption",
+    Component = "PatientBox",
+    Value = 10 cm }
+
+# Define the beam parameters with collimator angle and MLC settings
+p:Beam
+  { Energy = 6 MeV,            # Set to 6xFFF photon Truebeam energy
+    Type = photon,
+    #MLC = "MLC_settings.txt",   # Specify MLC settings file
+    CollimatorAngle = 0.0 deg  # Set the collimator angle
+  }
+
+# Define the field as a 28x28 cm rectangular field
+f:Beam
+  { Shape = Rectangle,
+    X_Dim = 28 cm,
+    Y_Dim = 28 cm,
+    BeamCenter = (0, 0) cm }
+
+# Set up scoring for Cerenkov emission
+s:CerenkovScorer
+  { Name = "CerenkovScorer",
+    Volume = "PatientBox",
+    EnergyThreshold = 0.1 MeV,  # Set an appropriate energy threshold
+    Binning = (0.1 MeV, 10 MeV), # Set the energy binning as needed
+    Position = (0, 0, 0) cm }    # Initial position, will be updated
+
+# Specify scoring for dose
+s:EnergyDepositionScorer
+  { Name = "DoseScorer",
+    Volume = "PatientBox",
+    EnergyThreshold = 0.01 MeV, # Set an appropriate energy threshold for dose scoring
+    Binning = (0.01 MeV, 10 MeV),
+    Position = (0, 0, 0) cm }
+
+# Visualization settings
+s:Visualization
+  { VisualizationType = "OpenGL",
+    WindowSizeX = 800,
+    WindowSizeY = 600,
+    Component = "World" }
+
+# Configure DICOM output for the dose scorer
+s:DICOMWriter
+  { Component = "DoseScorer",
+    OutputFileName = "dose_output.dcm",
+    OnlyIncludeIfInRTStructure = "True" }
+
+# Configure DICOM output for the Cerenkov emission scorer
+s:DICOMWriter
+  { Component = "CerenkovScorer",
+    OutputFileName = "cerenkov_output.dcm",
+    OnlyIncludeIfInRTStructure = "True" }

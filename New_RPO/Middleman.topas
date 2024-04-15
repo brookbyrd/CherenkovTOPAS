@@ -1,0 +1,45 @@
+
+# Middleman file for running batches
+
+# 
+includeFile = Pt68.topas
+i:So/6X/NumberOfHistoriesInRun   = 10 #200000000
+
+####################################################
+# Geometry parameters from plan
+####################################################
+# RPO plan
+dc:Ge/Gantry_Angle = 229.0 deg
+dc:Ge/Collimator_Angle = 3.0 deg
+dc:Ge/Couch_Angle  = 0.0 deg
+
+dc:Ge/YJaw/PositiveFieldSetting  = 8.3 cm
+dc:Ge/YJaw/NegativeFieldSetting  = -8.8 cm
+
+dc:Ge/XJaw/PositiveFieldSetting  = 10.3 cm
+dc:Ge/XJaw/NegativeFieldSetting  = -2.9 cm
+
+s:Sc/Dose/OutputFileBase = "doseout_pt68_rpo"
+
+
+# LAO plan
+#dc:Ge/Gantry_Angle = 50.0 deg
+#dc:Ge/Collimator_Angle = 357.0 deg
+#dc:Ge/Couch_Angle  = 0.0 deg
+
+#dc:Ge/YJaw/PositiveFieldSetting  = 8.3 cm
+#dc:Ge/YJaw/NegativeFieldSetting  = -8.8 cm
+
+#dc:Ge/XJaw/PositiveFieldSetting  = 2.9 cm
+#dc:Ge/XJaw/NegativeFieldSetting  = -10.3 cm
+
+#s:Sc/Dose/OutputFileBase = "doseout_pt68_lao"
+
+####################################################
+# Other Housekeeping
+####################################################
+
+d:Ge/IEC_G/RotY    = -1.0 * Ge/Gantry_Angle deg
+d:Ge/IEC_B/RotZ    = -1.0 * Ge/Collimator_Angle deg
+d:Ge/IEC_S/RotZ    = Ge/Couch_Angle deg
+
