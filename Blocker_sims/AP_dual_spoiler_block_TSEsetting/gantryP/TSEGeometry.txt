@@ -1,0 +1,187 @@
+# Gemoetry of the TSE experiment 
+
+dv:Ma/Air/RefractiveIndex/Energies = 2 1.24 3.1 eV
+uv:Ma/Air/RefractiveIndex/Values = 2 1.0 1.0
+dv:Ma/Air/AbsLength/Energies = 2 1.24 3.1 eV
+dv:Ma/Air/AbsLength/Values = 2 50.0 50.0 m
+b:Ma/Air/EnableOpticalProperties = "True"
+
+#### solid water ################
+sv:Ma/POLYVINYL_CHLORIDE/Components = 4 "Hydrogen" "Oxygen" "Carbon" "Chlorine"
+uv:Ma/POLYVINYL_CHLORIDE/Fractions = 4 0.42 0.11 0.32 0.15
+d:Ma/POLYVINYL_CHLORIDE/Density = 1.00 g/cm3
+d:Ma/POLYVINYL_CHLORIDE/MeanExcitationEnergy = 74. eV
+#################################
+
+dv:Ma/POLYVINYL_CHLORIDE/RefractiveIndex/Energies = 2 1.24 3.1 eV
+uv:Ma/POLYVINYL_CHLORIDE/RefractiveIndex/Values = 2 1.53 1.56 
+dv:Ma/POLYVINYL_CHLORIDE/AbsLength/Energies = 2 1.24 3.1 eV
+dv:Ma/POLYVINYL_CHLORIDE/AbsLength/Values = 2 3.185 3.185 cm
+dv:Ma/POLYVINYL_CHLORIDE/Rayleigh/Energies = 7 1.24 1.38 1.55 1.77 2.07 2.48 3.1 eV
+dv:Ma/POLYVINYL_CHLORIDE/Rayleigh/Values = 7 0.5 0.328 0.205 0.12 0.065 0.031 0.013 cm
+dv:Ma/POLYVINYL_CHLORIDE/Miehg/Energies = 7 1.24 1.38 1.55 1.77 2.07 2.48 3.1 eV
+dv:Ma/POLYVINYL_CHLORIDE/Miehg/Values = 7 0.127 0.116 0.105 0.094 0.083 0.071 0.059 cm
+u:Ma/POLYVINYL_CHLORIDE/Miehg_Forward = 0.9
+u:Ma/POLYVINYL_CHLORIDE/Miehg_Backward = 0.9
+u:Ma/POLYVINYL_CHLORIDE/Miehg_Forward_Ratio = 1
+b:Ma/POLYVINYL_CHLORIDE/EnableOpticalProperties = "True"
+
+
+dv:Ma/Lucite/RefractiveIndex/Energies = 2 1.24 3.1 eV
+uv:Ma/Lucite/RefractiveIndex/Values = 2 1.48 1.50 
+dv:Ma/Lucite/AbsLength/Energies = 4 1.24 2.07 2.48 3.1 eV
+dv:Ma/Lucite/AbsLength/Values = 4 18 16.5 30 1 m
+b:Ma/Lucite/EnableOpticalProperties = "True"
+
+sv:Ma/Tungsten/Components = 1 "Tungsten"
+uv:Ma/Tungsten/Fractions = 1 1.0
+d:Ma/Tungsten/Density = 19.3 g/cm3
+d:Ma/Tungsten/MeanExcitationEnergy = 727. eV
+
+s:Ge/World/Material  = "Air"
+#s:Ge/World/Material  = "Vacuum"
+d:Ge/World/HLX       = 2.0 m
+d:Ge/World/HLY       = 2.0 m
+d:Ge/World/HLZ       = 5.0 m
+b:Ge/World/Invisible = "False"
+
+s:Ge/Nozzle/Type = "Group"
+s:Ge/Nozzle/Parent = "World"
+d:Ge/Nozzle/TransX = 0 m
+#d:Ge/Nozzle/TransY = 0 m
+d:Ge/Nozzle/TransY = 0.30070580 m
+#d:Ge/Nozzle/TransZ = -1. m
+d:Ge/Nozzle/TransZ = -0.95371695 m
+#d:Ge/Nozzle/RotX = 0. deg
+d:Ge/Nozzle/RotX = -17.5 deg
+d:Ge/Nozzle/RotY = 0. deg
+d:Ge/Nozzle/RotZ = 0. deg
+
+
+s:Ge/JawUpper1/Type = "TsBox"
+s:Ge/JawUpper1/Parent = "Nozzle"
+s:Ge/JawUpper1/Material = "Tungsten"
+d:Ge/JawUpper1/HLX = 10 cm
+d:Ge/JawUpper1/HLY = 10 cm
+d:Ge/JawUpper1/HLZ = 3.9 cm
+d:Ge/JawUpper1/TransX = 0. cm
+d:Ge/JawUpper1/TransY = 15.493014 cm
+d:Ge/JawUpper1/TransZ = 29.623918 cm
+d:Ge/JawUpper1/RotX = 10.2 deg
+d:Ge/JawUpper1/RotY = 0. deg
+d:Ge/JawUpper1/RotZ = 0. deg
+s:Ge/JawUpper1/Color = "white"
+
+s:Ge/JawUpper2/Type = "TsBox"
+s:Ge/JawUpper2/Parent = "Nozzle"
+s:Ge/JawUpper2/Material = "Tungsten"
+d:Ge/JawUpper2/HLX = 10 cm
+d:Ge/JawUpper2/HLY = 10 cm
+d:Ge/JawUpper2/HLZ = 3.9 cm
+d:Ge/JawUpper2/TransX = 0. cm
+d:Ge/JawUpper2/TransY = -15.493014 cm
+d:Ge/JawUpper2/TransZ = 29.623918 cm
+d:Ge/JawUpper2/RotX = -10.2 deg
+d:Ge/JawUpper2/RotY = 0. deg
+d:Ge/JawUpper2/RotZ = 0. deg
+s:Ge/JawUpper2/Color = "white"
+
+s:Ge/JawLower1/Type = "TsBox"
+s:Ge/JawLower1/Parent = "Nozzle"
+s:Ge/JawLower1/Material = "Tungsten"
+d:Ge/JawLower1/HLX = 10 cm
+d:Ge/JawLower1/HLY = 10 cm
+d:Ge/JawLower1/HLZ = 3.9 cm
+d:Ge/JawLower1/TransX = 17.034245 cm
+d:Ge/JawLower1/TransY = 0. cm
+d:Ge/JawLower1/TransZ = 38.186313 cm
+d:Ge/JawLower1/RotX = 0. deg
+d:Ge/JawLower1/RotY = -10.2 deg
+d:Ge/JawLower1/RotZ = 0. deg
+s:Ge/JawLower1/Color = "white"
+
+s:Ge/JawLower2/Type = "TsBox"
+s:Ge/JawLower2/Parent = "Nozzle"
+s:Ge/JawLower2/Material = "Tungsten"
+d:Ge/JawLower2/HLX = 10 cm
+d:Ge/JawLower2/HLY = 10 cm
+d:Ge/JawLower2/HLZ = 3.9 cm
+d:Ge/JawLower2/TransX = -17.034245 cm
+d:Ge/JawLower2/TransY = 0. cm
+d:Ge/JawLower2/TransZ = 38.186313 cm
+d:Ge/JawLower2/RotX = 0. deg
+d:Ge/JawLower2/RotY = 10.2 deg
+d:Ge/JawLower2/RotZ = 0. deg
+s:Ge/JawLower2/Color = "white"
+
+s:Ge/TSEBox/Type = "TsBox"
+s:Ge/TSEBox/Parent = "World"
+s:Ge/TSEBox/Material = "Air"
+d:Ge/TSEBox/HLX = 62.5 cm
+d:Ge/TSEBox/HLY = 120 cm
+d:Ge/TSEBox/HLZ = 60 cm
+d:Ge/TSEBox/TransX = 0. cm
+d:Ge/TSEBox/TransY = -12. cm
+d:Ge/TSEBox/TransZ = 400. cm
+d:Ge/TSEBox/RotX = 0. deg
+d:Ge/TSEBox/RotY = 0. deg
+d:Ge/TSEBox/RotZ = 0. deg
+s:Ge/TSEBox/Color = "red"
+
+#s:Ge/Phantom/Type = "TsBox"
+#s:Ge/Phantom/Parent = "TSEBox"
+#s:Ge/Phantom/Material = "G4_WATER"
+#d:Ge/Phantom/HLX = 25 cm
+#d:Ge/Phantom/HLY = 25 cm
+#d:Ge/Phantom/HLZ = 5 cm
+#d:Ge/Phantom/TransX = 0. cm
+#d:Ge/Phantom/TransY = 12. cm
+#d:Ge/Phantom/TransZ = 10. cm
+#d:Ge/Phantom/RotX = 0. deg
+#d:Ge/Phantom/RotY = -60. deg
+#d:Ge/Phantom/RotZ = 0. deg
+#s:Ge/Phantom/Color = "green"
+
+s:Ge/PVC/Type = "TsBox"
+s:Ge/PVC/Parent = "TSEBox"
+s:Ge/PVC/Material = "POLYVINYL_CHLORIDE"
+d:Ge/PVC/HLX = 60 cm
+d:Ge/PVC/HLY = 120. cm
+d:Ge/PVC/HLZ = .4 cm
+d:Ge/PVC/TransX = 0. cm
+d:Ge/PVC/TransY = 0. cm
+d:Ge/PVC/TransZ = 0. cm
+d:Ge/PVC/RotX = 0. deg
+d:Ge/PVC/RotY = 0. deg
+d:Ge/PVC/RotZ = 0. deg
+s:Ge/PVC/Color = "green"
+
+s:Ge/Blocker/Type = "TsBox"
+s:Ge/Blocker/Parent = "TSEBox"
+s:Ge/Blocker/Material = "G4_Pb"
+d:Ge/Blocker/HLX = 62.5 cm
+d:Ge/Blocker/HLY = 40. cm
+d:Ge/Blocker/HLZ = .2 cm
+d:Ge/Blocker/TransX = 0. cm
+d:Ge/Blocker/TransY = 80. cm
+d:Ge/Blocker/TransZ = -50. cm
+d:Ge/Blocker/RotX = 0. deg
+d:Ge/Blocker/RotY = 0. deg
+d:Ge/Blocker/RotZ = 0. deg
+s:Ge/Blocker/Color = "blue"
+
+
+s:Ge/Spoiler/Type = "TsBox"
+s:Ge/Spoiler/Parent = "TSEBox"
+s:Ge/Spoiler/Material = "Lucite"
+d:Ge/Spoiler/HLX = 62.5 cm
+d:Ge/Spoiler/HLY = 120 cm
+d:Ge/Spoiler/HLZ = 1.5 mm
+d:Ge/Spoiler/TransX = 0. cm
+d:Ge/Spoiler/TransY = 0. cm
+d:Ge/Spoiler/TransZ = -49.5 cm
+d:Ge/Spoiler/RotX = 0. deg
+d:Ge/Spoiler/RotY = 0. deg
+d:Ge/Spoiler/RotZ = 0. deg
+s:Ge/Spoiler/Color = "white"
+

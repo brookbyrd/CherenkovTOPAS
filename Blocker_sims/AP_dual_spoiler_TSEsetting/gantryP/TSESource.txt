@@ -1,0 +1,12 @@
+includeFile = TSEGeometry.txt
+
+s:So/ElectronVarian/Type = "PhaseSpace"
+s:So/ElectronVarian/Component = "PlanePosition" # coordinate system of phase space. Usually "World"
+s:So/ElectronVarian/PhaseSpaceFileName = "../../../tsePatient/TrueBeam_06E_00_IAEA" # match exact case
+#b:So/ElectronVarian/LimitedAssumePhotonIsNewHistory = "true"
+b:So/ElectronVarian/PhaseSpaceIncludeEmptyHistories = "False" # defaults to false
+b:So/ElectronVarian/PhaseSpacePreCheck = "True" # defaults to true
+#b:So/ElectronVarian/PhaseSpacePreCheck = "False" # _06E_00_IAEA. has been checked already 
+i:So/ElectronVarian/PhaseSpaceMultipleUse = 4 # reuse this phase space multiple times
+#i:So/ElectronVarian/PhaseSpaceMultipleUse = 0 # number of histories in phase space is ignored 
+#i:So/ElectronVarian/NumberOfHistoriesInRun = 20

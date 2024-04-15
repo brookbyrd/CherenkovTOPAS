@@ -1,0 +1,13 @@
+includeFile = TSEPhysics.txt
+
+
+# X binning causes creation of a parallel world for scoring
+s:Sc/EDeposit/Quantity                   = "EnergyDeposit"
+s:Sc/EDeposit/Component                  = "PVC"
+b:Sc/EDeposit/OutputToConsole            = "False"
+s:Sc/EDeposit/OutputFile                 = "EnergyDepositInPVC"
+s:Sc/EDeposit/IfOutputFileAlreadyExists  = "Overwrite"
+i:Sc/EDeposit/XBins                      = 120
+i:Sc/EDeposit/YBins                      = 240
+i:Sc/EDeposit/ZBins                      = 4
+#sv:Sc/EDeposit/Report = 3 "Sum" "Count_In_Bin" "Variance"

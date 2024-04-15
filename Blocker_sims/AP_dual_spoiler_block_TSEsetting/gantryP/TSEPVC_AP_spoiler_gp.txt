@@ -1,0 +1,45 @@
+includeFile = TSEScore.txt
+i:Ts/Seed = 1
+i:Ts/NumberOfThreads = 14
+b:Ts/DumpNonDefaultParameters = "True"
+b:Ts/ShowCPUTime                = "True"
+
+
+##### source type: "PhaseSpace"
+s:Ge/PlanePosition/Parent = "Nozzle"
+s:Ge/PlanePosition/Type = "Group"
+d:Ge/PlanePosition/TransX = 0. cm
+d:Ge/PlanePosition/TransY = 0. cm
+d:Ge/PlanePosition/TransZ = 26.7 cm
+d:Ge/PlanePosition/RotX = 0.  deg
+d:Ge/PlanePosition/RotY = 0.  deg
+d:Ge/PlanePosition/RotZ = 0. deg
+
+
+#s:Gr/ViewA/ColorBy = "ParticleType"
+#sv:Gr/ViewA/ColorByParticleTypeNames = 5 "e-" "gamma" "proton" "neutron" "opticalphoton" 
+#sv:Gr/ViewA/ColorByParticleTypeColors = 5 "red" "magenta" "blue" "yellow" "green"
+#s:Gr/ViewA/Type             = "OpenGL"
+#i:Gr/ViewA/WindowSizeX      = 1024
+#i:Gr/ViewA/WindowSizeY      = 768
+#b:Gr/ViewA/IncludeAxes      = "True"
+#d:Gr/ViewA/Theta            = 90 deg
+#d:Gr/ViewA/Phi              = 90 deg
+#s:Gr/ViewA/Projection       = "Perspective"
+#d:Gr/ViewA/PerspectiveAngle = 30 deg
+#u:Gr/ViewA/Zoom             = 1.5
+
+#s:Gr/ViewB/ColorBy = "ParticleType"
+#sv:Gr/ViewB/ColorByParticleTypeNames = 5 "e-" "gamma" "proton" "neutron" "opticalphoton" 
+#sv:Gr/ViewB/ColorByParticleTypeColors = 5 "red" "magenta" "blue" "yellow" "green"
+#s:Gr/ViewB/Type             = "OpenGL"
+#i:Gr/ViewB/WindowSizeX      = 1024
+#i:Gr/ViewB/WindowSizeY      = 768
+#b:Gr/ViewB/IncludeAxes      = "True"
+#d:Gr/ViewB/Theta            = 0 deg
+#d:Gr/ViewB/Phi              = 0 deg
+#s:Gr/ViewB/Projection       = "Perspective"
+#d:Gr/ViewB/PerspectiveAngle = 30 deg
+#u:Gr/ViewB/Zoom             = 1.5
+
+#b:Ts/PauseBeforeQuit = "True"

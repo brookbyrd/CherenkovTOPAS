@@ -1,0 +1,100 @@
+G4WT6 > Begin processing for Run: 0, History: 162963874
+G4WT6 > Begin processing for Run: 0, History: 162963875
+G4WT6 > Begin processing for Run: 0, History: 162963876
+G4WT6 > Begin processing for Run: 0, History: 162963877
+G4WT6 > Begin processing for Run: 0, History: 162963878
+G4WT6 > Begin processing for Run: 0, History: 162963879
+G4WT6 > Begin processing for Run: 0, History: 162963880
+G4WT6 > Begin processing for Run: 0, History: 162963881
+G4WT6 > Begin processing for Run: 0, History: 162963882
+G4WT6 > Begin processing for Run: 0, History: 162963883
+G4WT6 > Begin processing for Run: 0, History: 162963884
+G4WT6 > Begin processing for Run: 0, History: 162963885
+G4WT6 > Begin processing for Run: 0, History: 162963886
+G4WT6 > Begin processing for Run: 0, History: 162963887
+G4WT6 > Begin processing for Run: 0, History: 162963888
+G4WT6 > Begin processing for Run: 0, History: 162963889
+G4WT6 > Begin processing for Run: 0, History: 162963890
+G4WT6 > Begin processing for Run: 0, History: 162963891
+G4WT6 > Begin processing for Run: 0, History: 162963892
+G4WT6 > Begin processing for Run: 0, History: 162963893
+G4WT6 > Begin processing for Run: 0, History: 162963894
+G4WT6 > Begin processing for Run: 0, History: 162963895
+G4WT6 > Begin processing for Run: 0, History: 162963896
+G4WT6 > Begin processing for Run: 0, History: 162963897
+G4WT6 > Begin processing for Run: 0, History: 162963898
+G4WT6 > Begin processing for Run: 0, History: 162963899
+G4WT6 > Begin processing for Run: 0, History: 162963900
+G4WT6 > Begin processing for Run: 0, History: 162963901
+G4WT6 > Begin processing for Run: 0, History: 162963902
+G4WT6 > Begin processing for Run: 0, History: 162963903
+G4WT6 > Begin processing for Run: 0, History: 162963904
+G4WT6 > Begin processing for Run: 0, History: 162963905
+G4WT6 > Begin processing for Run: 0, History: 162963906
+G4WT6 > Begin processing for Run: 0, History: 162963907
+G4WT6 > Begin processing for Run: 0, History: 162963908
+G4WT6 > Begin processing for Run: 0, History: 162963909
+G4WT6 > Begin processing for Run: 0, History: 162963910
+G4WT6 > Begin processing for Run: 0, History: 162963911
+G4WT6 > Begin processing for Run: 0, History: 162963912
+G4WT6 > Begin processing for Run: 0, History: 162963913
+G4WT6 > Begin processing for Run: 0, History: 162963914
+G4WT6 > Begin processing for Run: 0, History: 162963915
+G4WT6 > Begin processing for Run: 0, History: 162963916
+G4WT6 > Begin processing for Run: 0, History: 162963917
+G4WT6 > Begin processing for Run: 0, History: 162963918
+G4WT6 > Begin processing for Run: 0, History: 162963919
+G4WT6 > Begin processing for Run: 0, History: 162963920
+G4WT6 > Begin processing for Run: 0, History: 162963921
+G4WT6 > Begin processing for Run: 0, History: 162963922
+G4WT6 > Begin processing for Run: 0, History: 162963923
+G4WT6 > Begin processing for Run: 0, History: 162963924
+G4WT6 > Begin processing for Run: 0, History: 162963925
+G4WT6 > Begin processing for Run: 0, History: 162963926
+G4WT6 > Begin processing for Run: 0, History: 162963927
+G4WT6 > Begin processing for Run: 0, History: 162963928
+G4WT6 > Begin processing for Run: 0, History: 162963929
+G4WT6 > Begin processing for Run: 0, History: 162963930
+G4WT6 > Begin processing for Run: 0, History: 162963931
+G4WT6 > Begin processing for Run: 0, History: 162963932
+G4WT6 > Begin processing for Run: 0, History: 162963933
+G4WT6 > Begin processing for Run: 0, History: 162963934
+G4WT6 > Begin processing for Run: 0, History: 162963935
+=======================================================================
+======       Pre-compound/De-excitation Physics Parameters     ========
+=======================================================================
+Type of pre-compound inverse x-section              3
+Pre-compound model active                           1
+Pre-compound excitation low energy (MeV)            0.1
+Pre-compound excitation high energy (MeV)           30
+Type of de-excitation inverse x-section             3
+Type of de-excitation factory                       Evaporation+GEM
+Number of de-excitation channels                    68
+Min excitation energy (keV)                         0.01
+Min energy per nucleon for multifragmentation (MeV) 2e+05
+Limit excitation energy for Fermi BreakUp (MeV)     20
+Level density (1/MeV)                               0.075
+Use simple level density model                      1
+Use discrete excitation energy of the residual      0
+Time limit for long lived isomeres (ns)             1000
+Internal e- conversion flag                         1
+Store e- internal conversion data                   0
+Electron internal conversion ID                     2
+Correlated gamma emission flag                      0
+Max 2J for sampling of angular correlations         10
+Upload data before 1st event for                Z < 9
+=======================================================================
+
+TOPAS run sequence complete.
+Particle source Demo: Total number of histories: 0
+Particle source ElectronVarian: Total number of histories: 162964384
+
+Scorer: EDeposit
+Results have been written to file: EnergyDepositInPVC.csv
+
+Elapsed times:
+Parameter Reading : User=0.000000s Real=0.003447s Sys=0.000000s [Cpu=0.0%]
+    Initialization: User=100.540000s Real=298.630087s Sys=197.310000s [Cpu=99.7%]
+         Execution: User=787469.920000s Real=66796.959491s Sys=5725.770000s [Cpu=1187.5%]
+      Finalization: User=0.550000s Real=1.447124s Sys=0.880000s [Cpu=98.8%]
+             Total: User=787571s Real=67097s Sys=5923.96s
