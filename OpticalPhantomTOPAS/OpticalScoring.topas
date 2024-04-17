@@ -1,0 +1,280 @@
+
+includeFile = Materials.topas
+
+###################################################
+# Box 01
+###################################################
+
+s:Ge/MyBox01/Type     = "TsBox"
+s:Ge/MyBox01/Material = "MyWater"
+s:Ge/MyBox01/Parent   = "World"
+d:Ge/MyBox01/HLX      = 0.15 m
+d:Ge/MyBox01/HLY      = 0.15 m
+d:Ge/MyBox01/HLZ      = 0.001 m
+d:Ge/MyBox01/TransX   = 0 m
+d:Ge/MyBox01/TransY   = 0 m
+d:Ge/MyBox01/TransZ   = -0.001 m
+s:Ge/MyBox01/Color    = "blue"
+s:Ge/MyBox01/DrawingStyle = "WireFrame"
+
+###################################################
+# Box 02
+###################################################
+
+s:Ge/MyBox02/Type     = "TsBox"
+s:Ge/MyBox02/Material = "MyWater"
+s:Ge/MyBox02/Parent   = "World"
+d:Ge/MyBox02/HLX      = 0.15 m
+d:Ge/MyBox02/HLY      = 0.15 m
+d:Ge/MyBox02/HLZ      = 0.001 m
+d:Ge/MyBox02/TransX   = 0 m
+d:Ge/MyBox02/TransY   = 0 m
+d:Ge/MyBox02/TransZ   = -0.003 m
+s:Ge/MyBox02/Color    = "blue"
+s:Ge/MyBox02/DrawingStyle = "WireFrame"
+
+###################################################
+# Box 03
+###################################################
+
+s:Ge/MyBox03/Type     = "TsBox"
+s:Ge/MyBox03/Material = "MyWater"
+s:Ge/MyBox03/Parent   = "World"
+d:Ge/MyBox03/HLX      = 0.15 m
+d:Ge/MyBox03/HLY      = 0.15 m
+d:Ge/MyBox03/HLZ      = 0.001 m
+d:Ge/MyBox03/TransX   = 0 m
+d:Ge/MyBox03/TransY   = 0 m
+d:Ge/MyBox03/TransZ   = -0.005 m
+s:Ge/MyBox03/Color    = "blue"
+s:Ge/MyBox03/DrawingStyle = "WireFrame"
+
+###################################################
+# Box 04
+###################################################
+
+s:Ge/MyBox04/Type     = "TsBox"
+s:Ge/MyBox04/Material = "MyWater"
+s:Ge/MyBox04/Parent   = "World"
+d:Ge/MyBox04/HLX      = 0.15 m
+d:Ge/MyBox04/HLY      = 0.15 m
+d:Ge/MyBox04/HLZ      = 0.001 m
+d:Ge/MyBox04/TransX   = 0 m
+d:Ge/MyBox04/TransY   = 0 m
+d:Ge/MyBox04/TransZ   = -0.007 m
+s:Ge/MyBox04/Color    = "blue"
+s:Ge/MyBox04/DrawingStyle = "WireFrame"
+
+###################################################
+# Box 05
+###################################################
+
+s:Ge/MyBox05/Type     = "TsBox"
+s:Ge/MyBox05/Material = "MyWater"
+s:Ge/MyBox05/Parent   = "World"
+d:Ge/MyBox05/HLX      = 0.15 m
+d:Ge/MyBox05/HLY      = 0.15 m
+d:Ge/MyBox05/HLZ      = 0.001 m
+d:Ge/MyBox05/TransX   = 0 m
+d:Ge/MyBox05/TransY   = 0 m
+d:Ge/MyBox05/TransZ   = -0.009 m
+s:Ge/MyBox05/Color    = "blue"
+s:Ge/MyBox05/DrawingStyle = "WireFrame"
+
+###################################################
+# Box 06
+###################################################
+
+s:Ge/MyBox06/Type     = "TsBox"
+s:Ge/MyBox06/Material = "MyWater"
+s:Ge/MyBox06/Parent   = "World"
+d:Ge/MyBox06/HLX      = 0.15 m
+d:Ge/MyBox06/HLY      = 0.15 m
+d:Ge/MyBox06/HLZ      = 0.001 m
+d:Ge/MyBox06/TransX   = 0 m
+d:Ge/MyBox06/TransY   = 0 m
+d:Ge/MyBox06/TransZ   = -0.011 m
+s:Ge/MyBox06/Color    = "blue"
+s:Ge/MyBox06/DrawingStyle = "WireFrame"
+
+###################################################
+# Box 07
+###################################################
+
+s:Ge/MyBox07/Type     = "TsBox"
+s:Ge/MyBox07/Material = "MyWater"
+s:Ge/MyBox07/Parent   = "World"
+d:Ge/MyBox07/HLX      = 0.15 m
+d:Ge/MyBox07/HLY      = 0.15 m
+d:Ge/MyBox07/HLZ      = 0.001 m
+d:Ge/MyBox07/TransX   = 0 m
+d:Ge/MyBox07/TransY   = 0 m
+d:Ge/MyBox07/TransZ   = -0.013 m
+s:Ge/MyBox07/Color    = "blue"
+s:Ge/MyBox07/DrawingStyle = "WireFrame"
+
+###################################################
+# Box 08
+###################################################
+
+s:Ge/MyBox08/Type     = "TsBox"
+s:Ge/MyBox08/Material = "MyWater"
+s:Ge/MyBox08/Parent   = "World"
+d:Ge/MyBox08/HLX      = 0.15 m
+d:Ge/MyBox08/HLY      = 0.15 m
+d:Ge/MyBox08/HLZ      = 0.001 m
+d:Ge/MyBox08/TransX   = 0 m
+d:Ge/MyBox08/TransY   = 0 m
+d:Ge/MyBox08/TransZ   = -0.015 m
+s:Ge/MyBox08/Color    = "blue"
+s:Ge/MyBox08/DrawingStyle = "WireFrame"
+
+###################################################
+# Box 09
+###################################################
+
+s:Ge/MyBox09/Type     = "TsBox"
+s:Ge/MyBox09/Material = "MyWater"
+s:Ge/MyBox09/Parent   = "World"
+d:Ge/MyBox09/HLX      = 0.15 m
+d:Ge/MyBox09/HLY      = 0.15 m
+d:Ge/MyBox09/HLZ      = 0.001 m
+d:Ge/MyBox09/TransX   = 0 m
+d:Ge/MyBox09/TransY   = 0 m
+d:Ge/MyBox09/TransZ   = -0.017 m
+s:Ge/MyBox09/Color    = "blue"
+s:Ge/MyBox09/DrawingStyle = "WireFrame"
+
+###################################################
+# Box 10
+###################################################
+
+s:Ge/MyBox10/Type     = "TsBox"
+s:Ge/MyBox10/Material = "MyWater"
+s:Ge/MyBox10/Parent   = "World"
+d:Ge/MyBox10/HLX      = 0.15 m
+d:Ge/MyBox10/HLY      = 0.15 m
+d:Ge/MyBox10/HLZ      = 0.001 m
+d:Ge/MyBox10/TransX   = 0 m
+d:Ge/MyBox10/TransY   = 0 m
+d:Ge/MyBox10/TransZ   = -0.019 m
+s:Ge/MyBox10/Color    = "blue"
+s:Ge/MyBox10/DrawingStyle = "WireFrame"
+
+###################################################
+# Box 11
+###################################################
+
+s:Ge/MyBox11/Type     = "TsBox"
+s:Ge/MyBox11/Material = "MyWater"
+s:Ge/MyBox11/Parent   = "World"
+d:Ge/MyBox11/HLX      = 0.15 m
+d:Ge/MyBox11/HLY      = 0.15 m
+d:Ge/MyBox11/HLZ      = 0.001 m
+d:Ge/MyBox11/TransX   = 0 m
+d:Ge/MyBox11/TransY   = 0 m
+d:Ge/MyBox11/TransZ   = -0.021 m
+s:Ge/MyBox11/Color    = "blue"
+s:Ge/MyBox11/DrawingStyle = "WireFrame"
+
+###################################################
+# Box 12
+###################################################
+
+s:Ge/MyBox12/Type     = "TsBox"
+s:Ge/MyBox12/Material = "MyWater"
+s:Ge/MyBox12/Parent   = "World"
+d:Ge/MyBox12/HLX      = 0.15 m
+d:Ge/MyBox12/HLY      = 0.15 m
+d:Ge/MyBox12/HLZ      = 0.001 m
+d:Ge/MyBox12/TransX   = 0 m
+d:Ge/MyBox12/TransY   = 0 m
+d:Ge/MyBox12/TransZ   = -0.023 m
+s:Ge/MyBox12/Color    = "blue"
+s:Ge/MyBox12/DrawingStyle = "WireFrame"
+
+###################################################
+# Box 13
+###################################################
+
+s:Ge/MyBox13/Type     = "TsBox"
+s:Ge/MyBox13/Material = "MyWater"
+s:Ge/MyBox13/Parent   = "World"
+d:Ge/MyBox13/HLX      = 0.15 m
+d:Ge/MyBox13/HLY      = 0.15 m
+d:Ge/MyBox13/HLZ      = 0.001 m
+d:Ge/MyBox13/TransX   = 0 m
+d:Ge/MyBox13/TransY   = 0 m
+d:Ge/MyBox13/TransZ   = -0.025 m
+s:Ge/MyBox13/Color    = "blue"
+s:Ge/MyBox13/DrawingStyle = "WireFrame"
+
+###################################################
+# Box 14
+###################################################
+
+s:Ge/MyBox14/Type     = "TsBox"
+s:Ge/MyBox14/Material = "MyWater"
+s:Ge/MyBox14/Parent   = "World"
+d:Ge/MyBox14/HLX      = 0.15 m
+d:Ge/MyBox14/HLY      = 0.15 m
+d:Ge/MyBox14/HLZ      = 0.001 m
+d:Ge/MyBox14/TransX   = 0 m
+d:Ge/MyBox14/TransY   = 0 m
+d:Ge/MyBox14/TransZ   = -0.027 m
+s:Ge/MyBox14/Color    = "blue"
+s:Ge/MyBox14/DrawingStyle = "WireFrame"
+
+###################################################
+# Box 15
+###################################################
+
+s:Ge/MyBox15/Type     = "TsBox"
+s:Ge/MyBox15/Material = "MyWater"
+s:Ge/MyBox15/Parent   = "World"
+d:Ge/MyBox15/HLX      = 0.15 m
+d:Ge/MyBox15/HLY      = 0.15 m
+d:Ge/MyBox15/HLZ      = 0.001 m
+d:Ge/MyBox15/TransX   = 0 m
+d:Ge/MyBox15/TransY   = 0 m
+d:Ge/MyBox15/TransZ   = -0.029 m
+s:Ge/MyBox15/Color    = "blue"
+s:Ge/MyBox15/DrawingStyle = "WireFrame"
+
+###################################################
+# Last Box 16
+###################################################
+s:Ge/MyBox16/Type     = "TsBox"
+s:Ge/MyBox16/Material = "MyWater"
+s:Ge/MyBox16/Parent   = "World"
+d:Ge/MyBox16/HLX      = 0.15 m
+d:Ge/MyBox16/HLY      = 0.15 m
+d:Ge/MyBox16/HLZ      = 0.5 m
+d:Ge/MyBox16/TransX   = 0 m
+d:Ge/MyBox16/TransY   = 0 m
+d:Ge/MyBox16/TransZ   = -0.529 m
+s:Ge/MyBox16/Color    = "blue"
+s:Ge/MyBox16/DrawingStyle = "WireFrame"
+
+#################################################################
+# Cherenkov space scoring for the first box
+#################################################################
+
+s:Sc/OpticalScorerMyBox01/Parent           = "World"
+s:Sc/OpticalScorerMyBox01/Component             = "MyBox01"
+s:Sc/OpticalScorerMyBox01/Quantity              = "PhaseSpace"
+s:Sc/OpticalScorerMyBox01/Surface               = "MyBox01/ZPlusSurface"
+i:Sc/OpticalScorerMyBox01/OutputBufferSize      = 1000
+b:Sc/OpticalScorerMyBox01/IncludeParentID       = "True"
+b:Sc/OpticalScorerMyBox01/IncludeCreatorProcess = "True"
+b:Sc/OpticalScorerMyBox01/IncludeVertexInfo     = "True"
+sv:Sc/OpticalScorerMyBox01/OnlyIncludeParticlesNamed = 1 "opticalphoton"
+d:Sc/OpticalScorerMyBox01/OnlyIncludeIfIncidentParticleKEAbove = 1.378 eV
+d:Sc/OpticalScorerMyBox01/OnlyIncludeIfIncidentParticleKEBelow = 3.1 eV
+s:Sc/OpticalScorerMyBox01/OnlyIncludeParticlesGoing = "Out"
+s:Sc/OpticalScorerMyBox01/OutputFolder          = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons"
+s:Sc/OpticalScorerMyBox01/OutputFile            = "/Applications/topas/OpticalPhantomTOPAS/OutputElectrons/optical_phasespace_ref_slice01"
+b:Sc/OpticalScorerMyBox01/OutputToConsole       = "False"
+s:Sc/OpticalScorerMyBox01/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/OpticalScorerMyBox01/OutputType            = "ASCII"
+i:Sc/OpticalScorerMyBox01/BounceLimit           = 1000000
