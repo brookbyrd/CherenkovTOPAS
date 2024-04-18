@@ -1,0 +1,38 @@
+includeFile = TSEPhysics.topas
+
+# PhaseSpace at TSE box
+s:Sc/Scorer/Quantity = "OpticalPhotonCount"
+s:Sc/Scorer/Component = "TSEBox"
+s:Sc/Scorer/OutputFolder               = "/Applications/topas/tseOpt/Output/"
+s:Sc/Scorer/OutputFile = "/Applications/topas/tseOpt/Output/OpticalPhotonCount"
+s:Sc/Scorer/OutputType = "ASCII"
+s:Sc/Scorer/IfOutputFileAlreadyExists = "Overwrite"
+i:Sc/Scorer/BounceLimit = 1000000
+
+# PhaseSpace at phantom surface:
+s:Sc/PS_PVCsurface/Quantity                    = "PhaseSpace"
+s:Sc/PS_PVCsurface/Surface                     = "Bucket/ZMinusSurface"
+s:Sc/PS_PVCsurface/OutputType                  = "ASCII" #"ROOT" # ASCII, Binary, Limited or ROOT
+s:Sc/PS_PVCsurface/OutputFolder               = "/Applications/topas/tseOpt/Output/"
+s:Sc/PS_PVCsurface/OutputFile                 = "/Applications/topas/tseOpt/Output/PhaseSpace"
+b:Sc/PS_PVCsurface/OutputToConsole             = "True"
+#s:Sc/PS_PVCsurface/IfOutputFileAlreadyExists   = "Increment"
+s:Sc/PS_PVCsurface/IfOutputFileAlreadyExists   = "Overwrite"
+sv:Sc/PS_PVCsurface/OnlyIncludeParticlesNamed       = 1 "opticalphoton"
+i:Sc/PS_PVCsurface/OutputBufferSize            = 1000
+b:Sc/PS_PVCsurface/IncludeParentID             = "True"
+b:Sc/PS_PVCsurface/IncludeCreatorProcess       = "True"
+b:Sc/PS_PVCsurface/IncludeVertexInfo           = "True"
+
+# X binning causes creation of a parallel world for scoring
+s:Sc/DoseInBucket/Quantity                   = "DoseToMedium"
+s:Sc/DoseInBucket/Component                  = "Bucket"
+b:Sc/DoseInBucket/OutputToConsole            = "TRUE"
+s:Sc/DoseInBucket/OutputType                 = "DICOM"
+s:Sc/DoseInBucket/OutputFolder               = "/Applications/topas/BucketTSET/Output/"
+s:Sc/DoseInBucket/OutputFile                 = "/Applications/topas/BucketTSET/Output/Dose"
+s:Sc/DoseInBucket/IfOutputFileAlreadyExists  = "Overwrite"
+#i:Sc/DoseInPVC/XBins                      = 24
+#i:Sc/DoseInPVC/YBins                      = 48
+#i:Sc/DoseInPVC/ZBins                      = 8
+sv:Sc/DoseInBucket/Report                      = 2 "mean" "standard_deviation"

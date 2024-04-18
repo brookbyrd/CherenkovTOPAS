@@ -1,0 +1,38 @@
+includeFile = TSEGeometry.topas
+
+s:So/ElectronVarian/Type = "PhaseSpace"
+s:So/ElectronVarian/Component = "PlanePosition" # coordinate system of phase space. Usually "World"
+s:So/ElectronVarian/PhaseSpaceFileName = "TrueBeam_06E_00_IAEA" # match exact case
+
+#b:So/ElectronVarian/LimitedAssumePhotonIsNewHistory = "true"
+b:So/ElectronVarian/PhaseSpaceIncludeEmptyHistories = "False" # defaults to false
+b:So/ElectronVarian/PhaseSpacePreCheck = "False" # defaults to true
+#b:So/ElectronVarian/PhaseSpacePreCheck = "False" # _06E_00_IAEA. has been checked already 
+#i:So/ElectronVarian/PhaseSpaceMultipleUse = 4 # reuse this phase space multiple times
+i:So/ElectronVarian/PhaseSpaceMultipleUse = 0 # number of histories in phase space is ignored 
+i:So/ElectronVarian/NumberOfHistoriesInRun = 10 #40000000
+
+####################################################
+# Visualization # Or uncomment this section if we want to visualize
+####################################################
+# Visualization settings - Choose the visualization type (OpenGL)
+s:Gr/MyGraphic1/Type = "OpenGL" 
+
+b:Gr/MyGraphic1/IncludeGeometry = "True" # defaults to "True"
+b:Gr/MyGraphic1/IncludeTrajectories = "True" # defaults to "True"
+b:Gr/MyGraphic1/IncludeStepPoints = "True" # Show trajectory step points, defaults to "False"
+iv:Gr/Color/lightblue = 3 175 255 255
+b:Gr/MyGraphic1/IncludeAxes = "True" # defaults to "False"
+s:Gr/MyGraphic1/AxesComponent = "World" # Component in which to center the axes. Defaults to World.
+
+s:Gr/RefreshEvery = "Session" # "History", "Run" or "Session"
+sv:Gr/MyGraphic1/VisibleWorlds = 1 "World" # "World", "All" or one or more specific world names
+i:Gr/MyGraphic1/WindowSizeX = 600
+i:Gr/MyGraphic1/WindowSizeY = 600
+b:Gr/MyGraphic1/HiddenLineRemovalForGeometry = "False" # Remove hidden lines from wireframe geometries, like Geant4’s /vis/viewer/set/hiddenEdge
+
+sv:Gr/MyGraphic1/ColorByCreatorProcessNames = 5 "eBrem" "Cerenkov" "Rayl" "eIoni" "compt" # one or more process name
+sv:Gr/MyGraphic1/ColorByCreatorProcessColors = 5 "red" "cyan" "blue" "yellow" "magenta" # one for every process name
+
+# b:Gr/MyGraphic1/Active = "False" # defaults to "True"
+b:Ge/QuitIfOverlapDetected = "False"

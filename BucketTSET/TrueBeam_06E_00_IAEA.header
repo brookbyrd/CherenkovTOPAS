@@ -1,0 +1,140 @@
+$IAEA_INDEX:
+00
+
+$TITLE:
+Varian TrueBeam 06E beam; created with VirtuaLinac (Sept. 24, 2014)
+
+$FILE_TYPE:
+0
+
+$CHECKSUM:
+986120961
+
+$RECORD_CONTENTS:
+  1   // X is stored ?
+  1   // Y is stored ?
+  0   // Z is stored ?
+  1   // U is stored ?
+  1   // V is stored ?
+  0   // W is stored ?
+  0   // Weight is stored ?
+  0   // Extra floats stored ?
+  0   // Extra longs stored ?
+
+$RECORD_CONSTANT:
+ 26.7    // Constant Z
+
+$RECORD_LENGTH:
+21
+
+$BYTE_ORDER:
+1234
+
+$ORIG_HISTORIES:
+65000000
+
+$PARTICLES:
+46958141
+
+$PHOTONS:
+9905535
+
+$ELECTRONS:
+37050269
+
+$POSITRONS:
+2337
+
+$PROTONS:
+0
+
+$NEUTRONS:
+0
+
+$TRANSPORT_PARAMETERS:
+Physics list: emstandard_opt4
+Interaction data: G4EMLOW6.35
+Range cut (photon)  : 0.01 mm
+Range cut (electron): 0.01 mm
+Range cut (positron): 0.01 mm
+
+$MACHINE_TYPE:
+x86_64
+
+$MONTE_CARLO_CODE_VERSION:
+Name: geant4-10-00-patch-01 [MT]	(28-February-2014)
+
+$GLOBAL_PHOTON_ENERGY_CUTOFF:
+0.0
+
+$GLOBAL_PARTICLE_ENERGY_CUTOFF:
+0.0
+
+$COORDINATE_SYSTEM_DESCRIPTION:
+IEC 61217. Z is beam axis; X is crossplane; Y is inplane.
+Positive Z is opposite beam direction and Z=0 is at isocenter
+(1000 mm from virtual source). For consistency with photon files, 
+"Constant Z" parameter above is the distance from the photon virtual
+source (i.e. particles are 73.3 cm from isoplane.)
+
+$MD5SUM:
+71642220aa1e45d3dad341e41f356d32
+
+$BEAM_NAME:
+Electron beam with foil 1 name: 6E and foil 2 name: 6E
+Foil 1 thickness (relative to nominal): 1.07
+Thickness of metal coating on ion chamber windows (relative to nominal): 0.8
+
+$FIELD_SIZE:
+Jaws/mlc not included in simulation.
+
+$NOMINAL_SSD:
+
+
+$MC_INPUT_FILENAME:
+
+
+$VARIANCE_REDUCTION_TECHNIQUES:
+
+
+$INITIAL_SOURCE_DESCRIPTION:
+Random incident beam. Mean energy of incident electrons: 6.84 MeV.
+Energy spectrum is a Gaussian with sigma 0.6 MeV. 
+Spot is a Gaussian with sigma: 0.7 mm (X), 0.7 mm (Y).
+Spot position: 0 mm (X), 0 mm (Y).
+Beam divergence: 0 deg (X), 0 deg (Y);
+Beam angle: 0 deg (X), 0 deg (Y).
+
+$PUBLISHED_REFERENCE:
+
+
+$AUTHORS:
+Daren Sawkey <daren.sawkey@varian.com>, <montecarloresearch@varian.com>
+
+$INSTITUTION:
+Varian Medical Systems, Inc., 3100 Hansen Way, Palo Alto CA 94304 USA
+
+$LINK_VALIDATION:
+http://myvarian.com/montecarlo
+
+$ADDITIONAL_NOTES:
+Format of phase space file:
+Type (1 byte); Energy (4); X (4); Y (4); MomDirX (4); MomDirY (4) Weight (if recorded) (4);
+Total of 21 bytes per particle.
+Units are MeV for energy, cm for X and Y.
+Types are 1 (photon), 2 (electron), 3 (positron)
+W is not recorded. Only particles travelling toward isocenter recorded.
+Original history flag is a negative energy.
+
+$STATISTICAL_INFORMATION_PARTICLES:
+//     Weight      Wmin      Wmax        <E>          Emin          Emax   Particle
+      9905535   1.00000   1.00000   0.738188      0.000990      8.657561   PHOTONS        
+     37050269   1.00000   1.00000   5.594001      0.000000      9.370461   ELECTRONS      
+         2337   1.00000   1.00000   1.464628      0.186184      4.712856   POSITRONS      
+
+$STATISTICAL_INFORMATION_GEOMETRY:
+direction  min       max
+x      -6.5000   6.5000
+y      -6.5000   6.5000
+
+

@@ -1,0 +1,23 @@
+includeFile = TSESource.topas
+
+s:Ph/ListName = "Optical"
+#s:Ph/ListName = "Edeposit"
+
+s:Ph/Optical/Type     = "Geant4_Modular"
+sv:Ph/Optical/Modules = 7 "g4em-standard_opt4" "g4h-phy_QGSP_BIC_HP" "g4decay" "g4ion-binarycascade" "g4h-elastic_HP" "g4stopping" "g4optical"
+#d:Ph/Optical/CutForAllParticles = 0.05 mm
+d:Ph/Optical/CutForGamma    = 0.04 mm
+d:Ph/Optical/CutForElectron = 0.03 mm
+d:Ph/Optical/CutForPositron = 0.02 mm
+d:Ph/Optical/CutForProton   = 0.01 mm
+
+s:Ph/Edeposit/Type     = "Geant4_Modular"
+sv:Ph/Edeposit/Modules = 6 "g4em-standard_opt4" "g4h-phy_QGSP_BIC_HP" "g4decay" "g4ion-binarycascade" "g4h-elastic_HP" "g4stopping" 
+#d:Ph/Edeposit/CutForAllParticles = 0.05 mm
+d:Ph/Edeposit/CutForGamma    = 0.04 mm
+d:Ph/Edeposit/CutForElectron = 0.03 mm
+d:Ph/Edeposit/CutForPositron = 0.02 mm
+d:Ph/Edeposit/CutForProton   = 0.01 mm
+
+
+b:Ph/ListProcesses = "True"
