@@ -1,0 +1,13 @@
+includeFile = PhantomExperiment.topas
+
+# Set seed
+i:Ts/Seed = 1
+
+# Conditions for Phantom
+s:Ge/fileEnding = "_mus_689_mua_061"
+
+# Add on to the files to identify optical properties
+s:Sc/OpticalScorerMyBox01/OutputFile = Sc/OpticalScorerMyBox01/OutputFile + Ge/fileEnding
+
+dv:Ma/MyWater/Miehg/Values  = 6 0.18639 0.16887 0.15099 0.13269 0.11389 0.09447  cm
+dv:Ma/MyWater/AbsLength/Values  = 6 1.66525 1.72344 1.65443 1.62443 1.62426 1.68475  cm

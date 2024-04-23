@@ -1,0 +1,43 @@
+
+# Set optical properties
+# dc:Ge/ScatteringLength = 0.145137 cm
+# dc:Ge/AbsorptionLength = 9.0909 cm
+
+######################################## 
+PHANTOM MATERIAL PROPERTIES
+########################################
+b:Ma/MyWater/BuildFromMaterials = "True"
+sv:Ma/MyWater/Components = 1 "G4_WATER"
+uv:Ma/MyWater/Fractions = 1 1
+d:Ma/MyWater/Density = 1 g/cm3
+
+dv:Ma/MyWater/RefractiveIndex/Energies = 6 1.38 1.55 1.77 2.07 2.48 3.1 eV
+uv:Ma/MyWater/RefractiveIndex/Values = 6 1.45 1.45 1.45 1.45 1.45 1.45
+dv:Ma/MyWater/Rayleigh/Energies = 6 1.38 1.55 1.77 2.07 2.48 3.1 eV
+dv:Ma/MyWater/Rayleigh/Values = 6 0.0328 0.0205 0.012 0.0065 0.0031 0.0013 cm   
+
+dv:Ma/MyWater/AbsLength/Energies = 6 1.38 1.55 1.77 2.07 2.48 3.1 eV
+# dv:Ma/MyWater/AbsLength/Values = 6 Ge/AbsorptionLength Ge/AbsorptionLength Ge/AbsorptionLength Ge/AbsorptionLength Ge/AbsorptionLength Ge/AbsorptionLength cm
+dv:Ma/MyWater/Miehg/Energies = 6 1.38 1.55 1.77 2.07 2.48 3.1 eV
+# dv:Ma/MyWater/Miehg/Values = 6 Ge/ScatteringLength Ge/ScatteringLength Ge/ScatteringLength Ge/ScatteringLength Ge/ScatteringLength Ge/ScatteringLength cm
+
+u:Ma/MyWater/Miehg_Forward = 0.9
+u:Ma/MyWater/Miehg_Backward = 0.9
+u:Ma/MyWater/Miehg_Forward_Ratio = 1
+
+b:Ma/MyWater/EnableOpticalProperties = "True"
+
+# dv:Ma/MyWater/Rayleigh/Energies = 1 1.86 eV
+# dv:Ma/MyWater/Rayleigh/Values = 1 0.012 cm
+# dv:Ma/MyWater/RefractiveIndex/Energies = 1 1.86 eV
+# uv:Ma/MyWater/RefractiveIndex/Values = 1 1.45
+# dv:Ma/MyWater/AbsLength/Energies = 1 1.86 eV
+# dv:Ma/MyWater/AbsLength/Values = 1 Ge/AbsorptionLength cm
+# dv:Ma/MyWater/Miehg/Energies = 1 1.86 eV
+# dv:Ma/MyWater/Miehg/Values = 1 Ge/ScatteringLength cm
+
+
+# dv:Ma/PatientTissueFromHU0/Miehg/Energies = 13 1.24	1.30505263157895	1.37755555555556	1.45858823529412	1.54975000000000	1.65306666666667	1.77114285714286	1.90738461538462	2.06633333333333	2.25418181818182	2.47960000000000	2.75511111111111	3.1 eV
+# dv:Ma/PatientTissueFromHU0/Miehg/Values = 13 0.0140934636073161	0.0135005082820051	0.0129024730697918	0.0122990282234317	0.0116898017914879	0.0110743712159587	0.0104522525784775	0.00982288661939469	0.00918562023410010	0.00853968147690054	0.00788414498298092	0.00721788278279861	0.00653949197403521 cm
+
+

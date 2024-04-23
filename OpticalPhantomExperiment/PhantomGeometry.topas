@@ -1,0 +1,152 @@
+# IEC_G: Gantry
+s:Ge/IEC_G/Parent  = "World"
+s:Ge/IEC_G/Type    = "Group"
+d:Ge/IEC_G/RotX    = 0. deg
+d:Ge/IEC_G/RotZ    = 0. deg
+d:Ge/IEC_G/TransX  = 0. m
+d:Ge/IEC_G/TransY  = 0. m
+d:Ge/IEC_G/TransZ  = 0. m
+
+# IEC_B: Collimator
+s:Ge/IEC_B/Parent           = "IEC_G"
+s:Ge/IEC_B/Type             = "Group"
+d:Ge/IEC_B/RotX             = 0. deg
+d:Ge/IEC_B/RotY             = 0. deg
+d:Ge/IEC_B/TransX           = 0. m
+d:Ge/IEC_B/TransY           = 0. m
+d:Ge/IEC_B/TransZ           = 0. m
+
+# IEC_S: Patient support
+s:Ge/IEC_S/Parent  = "World"
+s:Ge/IEC_S/Type    = "Group"
+d:Ge/IEC_S/RotX    = 0. deg
+d:Ge/IEC_S/RotY    = 0. deg
+d:Ge/IEC_S/TransX  = 0. m
+d:Ge/IEC_S/TransY  = 0. m
+d:Ge/IEC_S/TransZ  = 0. m
+
+# DICOM_to_IEC
+s:Ge/DICOM_to_IEC/Parent = "IEC_S"
+s:Ge/DICOM_to_IEC/Type   = "Group"
+d:Ge/DICOM_to_IEC/RotX   = 90.0 deg
+d:Ge/DICOM_to_IEC/RotY   = 0.0  deg
+d:Ge/DICOM_to_IEC/RotZ   = 0.0  deg
+
+d:Ge/SAD = 100. cm
+
+####################################################
+# Source from phase space
+####################################################
+s:Ge/PlanePosition/Parent = "IEC_G"
+s:Ge/PlanePosition/Type = "Group"
+d:Ge/PlanePosition/TransX = 0. cm
+d:Ge/PlanePosition/TransY = 0. cm
+d:Ge/PlanePosition/TransZ = Ge/SAD - 26.7 cm 
+d:Ge/PlanePosition/RotX = 0.  deg
+d:Ge/PlanePosition/RotY = 180.  deg
+d:Ge/PlanePosition/RotZ = 0. deg
+
+s:So/6X/Type = "PhaseSpace"
+s:So/6X/Component = "PlanePosition" # coordinate system of phase space. Usually "World"
+s:So/6X/PhaseSpaceFileName = "/Applications/topas/phsp/TrueBeam_v2_6FFF_00" # match exact case
+b:So/6X/PhaseSpaceIncludeEmptyHistories = "False" # defaults to false
+b:So/6X/PhaseSpacePreCheck = "False" 
+i:So/6X/PhaseSpaceMultipleUse = 0 # number of histories in phase space is ignored 
+
+# Define the source-to-surface distance (SSD) and phantom size
+dc:So/6X/SourceToSurfaceDistance = 100.0 cm
+
+####################################################
+# Jaws
+####################################################
+d:Ge/TravelAxisX = 0. deg # Constant to help remember angle for X Axis Travel
+d:Ge/TravelAxisY = 90. deg # Constant to help remember angle for Y Axis Travel
+
+
+ Y Jaws
+s:Ge/YJaw/JawTravelAxis  = "Y" # Jaw travel axis, "X" or "Y"
+s:Ge/YJaw/Parent         = "IEC_B"
+s:Ge/YJaw/Type           = "TsJaws"
+s:Ge/YJaw/Material       = "G4_W"
+d:Ge/YJaw/LX             = 20. cm  # Actual jaw width along JawTravelAxis
+d:Ge/YJaw/LY             = 20. cm  # Actual jaw length perpendicular to JawTravelAxis
+d:Ge/YJaw/LZ             = 7.80 cm # Jaw thickness along IEC Zb axis
+d:Ge/YJaw/SourceToUpstreamSurfaceDistance = 26.7 cm #Distance from x-ray target to jaw 
+d:Ge/YJaw/SAD        	= Ge/SAD cm
+d:Ge/YJaw/DistSourceToSAD = Ge/YJaw/SAD - Ge/YJaw/SourceToUpstreamSurfaceDistance cm
+d:Ge/YJaw/HalfThickness = 0.5 * Ge/YJaw/LZ cm
+d:Ge/YJaw/TransZ = Ge/YJaw/DistSourceToSAD - Ge/YJaw/HalfThickness cm
+d:Ge/YJaw/RotZ = Ge/TravelAxisY deg # Set to one of the above two constants
+s:Ge/YJaw/DrawingStyle   = "Solid" # Solid, WireFrame
+s:Ge/YJaw/Color = "green"
+b:Ge/YJaw/Visible = "True"
+
+
+# X Jaws
+s:Ge/XJaw/JawTravelAxis  = "X" # Jaw travel axis, "X" or "Y"
+s:Ge/XJaw/Parent         = "IEC_B"
+s:Ge/XJaw/Type           = "TsJaws"
+s:Ge/XJaw/Material       = "G4_W"
+d:Ge/XJaw/LX             = 20. cm  # Actual jaw width along JawTravelAxis
+d:Ge/XJaw/LY             = 20. cm  # Actual jaw length perpendicular to JawTravelAxis
+d:Ge/XJaw/LZ             = 7.80 cm # Jaw thickness along IEC Zb axis
+d:Ge/XJaw/SourceToUpstreamSurfaceDistance = 34.5 cm #Distance from x-ray target to jaw 
+d:Ge/XJaw/SAD        	= Ge/SAD cm
+d:Ge/XJaw/DistSourceToSAD = Ge/XJaw/SAD - Ge/XJaw/SourceToUpstreamSurfaceDistance cm
+d:Ge/XJaw/HalfThickness = 0.5 * Ge/XJaw/LZ cm
+d:Ge/XJaw/TransZ = Ge/XJaw/DistSourceToSAD - Ge/XJaw/HalfThickness cm
+d:Ge/XJaw/RotZ = Ge/TravelAxisX deg # Set to one of the above two constants
+s:Ge/XJaw/DrawingStyle   = "Solid"
+s:Ge/XJaw/Color = "red"
+b:Ge/XJaw/Visible = "True"
+
+# Geometry parameters from plan
+dc:Ge/Gantry_Angle = 0.0 deg
+dc:Ge/Collimator_Angle = 0.0 deg
+dc:Ge/Couch_Angle = 0.0 deg
+
+# Set the jaw positions for the uniform field to create a 28x28cm field
+dc:Ge/YJaw/PositiveFieldSetting = 14.0 cm
+dc:Ge/YJaw/NegativeFieldSetting = -14.0 cm
+dc:Ge/XJaw/PositiveFieldSetting = 14.0 cm
+dc:Ge/XJaw/NegativeFieldSetting = -14.0 cm
+
+# Other Housekeeping
+d:Ge/IEC_G/RotY = -1.0 * Ge/Gantry_Angle deg
+d:Ge/IEC_B/RotZ = -1.0 * Ge/Collimator_Angle deg
+d:Ge/IEC_S/RotZ = Ge/Couch_Angle deg
+
+
+####################################################
+# MLCs
+####################################################
+# Common parameters: type of geometry, position, and rotation
+s:Ge/MLC/Parent           = "IEC_B" # IEC beam limiting device coordinates
+s:Ge/MLC/Type             = "TsMultiLeafCollimator"
+s:Ge/MLC/Material         = "G4_W"
+d:Ge/MLC/SAD              = Ge/SAD cm 
+
+# Geometry taken from AAPM: https://www.aapm.org/meetings/99am/pdf/2787-9625.pdf
+#d:Ge/MLC/SourceToUpstreamSurfaceDistance = 46.8 cm # Distance from source to top of MLC bank
+s:Ge/MLC/LeafTravelAxis   = "X" # Leaf travel axis, "X" or "Y"
+d:Ge/MLC/MaximumLeafOpen  = 20.0 cm # Actual limit of leaf travel
+d:Ge/MLC/Thickness        = 6.7 cm # Actual thickness of MLC leaves along IEC Zb
+d:Ge/MLC/Length           = 20.0 cm # Length of MLC leaves in direction of travel
+d:Ge/MLC/TransX   = 0 m
+d:Ge/MLC/TransY   = 0 m
+d:Ge/MLC/TransZ   = 53.5 cm
+
+# MLC leaf widths and positions, projected to isocenter for 10 cm x 20 cm field
+dv:Ge/MLC/Widths = 60 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 cm
+#dv:Ge/MLC/NegativeFieldSetting = 60 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 cm
+#dv:Ge/MLC/PositiveFieldSetting = 60 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 cm
+
+s:Ge/MLC/DrawingStyle     = "Solid"
+b:Ge/MLC/PrintInformation = "False"
+
+# Each leaf’s opening distance from Y axis.
+# XMinusLeavesOpen means the x position of X- leaf’s right edge.
+# XPlusLeavesOpen means the x position of X+ leaf’s left edge.
+dv:Ge/MLC/XMinusLeavesOpen = 60  -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 cm
+dv:Ge/MLC/XPlusLeavesOpen = 60  20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 cm
+

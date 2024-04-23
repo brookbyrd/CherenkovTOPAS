@@ -1,0 +1,57 @@
+includeFile = PhantomMaterials.topas
+
+###################################################
+# Last Box 01
+
+###################################################
+s:Ge/MyBox01/Type     = "TsCyld"
+s:Ge/MyBox01/Material = "MyWater"
+s:Ge/MyBox01/Parent   = "World"
+d:Ge/MyBox01/HLX      = 0.015 m
+d:Ge/MyBox01/HLY      = 0.015 m
+d:Ge/MyBox01/HLZ      = 0.5 m
+d:Ge/MyBox01/TransX   = 0 m
+d:Ge/MyBox01/TransY   = 0 m
+d:Ge/MyBox01/TransZ   = -0.5 m
+s:Ge/MyBox01/Color    = "blue"
+s:Ge/MyBox01/DrawingStyle = "WireFrame"
+s:Ge/MyBox01/OpticalBehavior = "SurfaceDetector"
+
+
+#################################################################
+# Cherenkov space scoring for the first box
+#################################################################
+
+s:Sc/OpticalScorerMyBox01/Parent           = "World"
+s:Sc/OpticalScorerMyBox01/Component             = "MyBox01"
+s:Sc/OpticalScorerMyBox01/Quantity              = "PhaseSpace"
+s:Sc/OpticalScorerMyBox01/Surface               = "MyBox01/ZPlusSurface"
+i:Sc/OpticalScorerMyBox01/OutputBufferSize      = 1000
+b:Sc/OpticalScorerMyBox01/IncludeParentID       = "True"
+b:Sc/OpticalScorerMyBox01/IncludeCreatorProcess = "True"
+b:Sc/OpticalScorerMyBox01/IncludeVertexInfo     = "True"
+sv:Sc/OpticalScorerMyBox01/OnlyIncludeParticlesNamed = 1 "opticalphoton"
+# d:Sc/OpticalScorerMyBox01/OnlyIncludeIfIncidentParticleKEAbove = 1.38 eV
+# d:Sc/OpticalScorerMyBox01/OnlyIncludeIfIncidentParticleKEBelow = 3.1 eV
+s:Sc/OpticalScorerMyBox01/OnlyIncludeParticlesGoing = "Out"
+s:Sc/OpticalScorerMyBox01/OutputFolder          = "/Applications/topas/OpticalPhantomExperiment/Output"
+s:Sc/OpticalScorerMyBox01/OutputFile            = "/Applications/topas/OpticalPhantomExperiment/Output/optical_phasespace_ref_slice01"
+b:Sc/OpticalScorerMyBox01/OutputToConsole       = "True"
+s:Sc/OpticalScorerMyBox01/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/OpticalScorerMyBox01/OutputType            = "ASCII"
+i:Sc/OpticalScorerMyBox01/BounceLimit           = 1000000
+
+
+# Surface used to detect optical photons
+s:Su/SurfaceDetector/Type                = "dielectric_dielectric"
+#s:Su/SurfaceDetector/Type                = "dielectric_metal"
+#s:Su/SurfaceDetector/Finish              = "polished"
+s:Su/SurfaceDetector/Finish              = "ground"
+#s:Su/SurfaceDetector/Model               = "unified"
+s:Su/SurfaceDetector/Model               = "glisur"
+dv:Su/SurfaceDetector/Efficiency/Energies   = 2 1.24 3.1 eV
+uv:Su/SurfaceDetector/Efficiency/Values     = 2 1.0 1.0
+dv:Su/SurfaceDetector/Reflectivity/Energies = 2 1.24 3.1 eV
+uv:Su/SurfaceDetector/Reflectivity/Values   = 2 0.005 0.015
+
+
