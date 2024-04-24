@@ -11,6 +11,7 @@ sv:Ma/MyWater/Components = 1 "G4_WATER"
 uv:Ma/MyWater/Fractions = 1 1
 d:Ma/MyWater/Density = 1 g/cm3
 
+
 dv:Ma/MyWater/RefractiveIndex/Energies = 6 1.38 1.55 1.77 2.07 2.48 3.1 eV
 uv:Ma/MyWater/RefractiveIndex/Values = 6 1.45 1.45 1.45 1.45 1.45 1.45
 dv:Ma/MyWater/Rayleigh/Energies = 6 1.38 1.55 1.77 2.07 2.48 3.1 eV

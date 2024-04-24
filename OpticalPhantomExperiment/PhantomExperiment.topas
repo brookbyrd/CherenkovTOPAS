@@ -22,7 +22,7 @@ sv:Ph/Optical/Modules = 7 "g4em-standard_opt4" "g4h-phy_QGSP_BIC_HP" "g4decay" "
 b:Ph/ListProcesses = "False"
 
 # SELECT NUMBER OF RUNS
-i:So/6X/NumberOfHistoriesInRun   = 500000 #500000 #000000 #10M
+i:So/6X/NumberOfHistoriesInRun   = 1000000 #500000 #000000 #10M
 
 ###################################################
 # World Coordination
@@ -39,7 +39,7 @@ b:Ge/World/Invisible = "true"
 ####################################################
 # Visualization # Or uncomment this section if we want to visualize
 ####################################################
-# # Visualization settings - Choose the visualization type (OpenGL)
+# Visualization settings - Choose the visualization type (OpenGL)
 # s:Gr/MyGraphic1/Type = "OpenGL" 
 
 # b:Gr/MyGraphic1/IncludeGeometry = "True" # defaults to "True"
@@ -58,5 +58,5 @@ b:Ge/World/Invisible = "true"
 # sv:Gr/MyGraphic1/ColorByCreatorProcessNames = 5 "eBrem" "Cerenkov" "Rayl" "eIoni" "compt" # one or more process name
 # sv:Gr/MyGraphic1/ColorByCreatorProcessColors = 5 "red" "cyan" "blue" "yellow" "magenta" # one for every process name
 
-# # # b:Gr/MyGraphic1/Active = "False" # defaults to "True"
+# # b:Gr/MyGraphic1/Active = "False" # defaults to "True"
 b:Ge/QuitIfOverlapDetected = "False"

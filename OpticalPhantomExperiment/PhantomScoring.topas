@@ -4,18 +4,38 @@ includeFile = PhantomMaterials.topas
 # Last Box 01
 
 ###################################################
-s:Ge/MyBox01/Type     = "TsCyld"
-s:Ge/MyBox01/Material = "MyWater"
-s:Ge/MyBox01/Parent   = "World"
-d:Ge/MyBox01/HLX      = 0.015 m
-d:Ge/MyBox01/HLY      = 0.015 m
-d:Ge/MyBox01/HLZ      = 0.5 m
-d:Ge/MyBox01/TransX   = 0 m
-d:Ge/MyBox01/TransY   = 0 m
-d:Ge/MyBox01/TransZ   = -0.5 m
-s:Ge/MyBox01/Color    = "blue"
-s:Ge/MyBox01/DrawingStyle = "WireFrame"
-s:Ge/MyBox01/OpticalBehavior = "SurfaceDetector"
+# s:Ge/MyBox01/Type     = "TsBox"
+# s:Ge/MyBox01/Material = "MyWater"
+# s:Ge/MyBox01/Parent   = "World"
+# d:Ge/MyBox01/HLX      = 0.015 m
+# d:Ge/MyBox01/HLY      = 0.015 m
+# d:Ge/MyBox01/HLZ      = 0.5 m
+# d:Ge/MyBox01/TransX   = 0 m
+# d:Ge/MyBox01/TransY   = 0 m
+# d:Ge/MyBox01/TransZ   = -0.5 m
+# s:Ge/MyBox01/Color    = "blue"
+# s:Ge/MyBox01/DrawingStyle = "WireFrame"
+# s:Ge/MyBox01/OpticalBehavior = "SurfaceDetector"
+
+s:Ge/OpticalPhantom/Type = "TsCylinder"
+s:Ge/OpticalPhantom/Parent = "World"
+s:Ge/OpticalPhantom/Material = "MyWater"
+d:Ge/OpticalPhantom/RMin     = 0 cm
+d:Ge/OpticalPhantom/RMax     = 1.5 cm
+d:Ge/OpticalPhantom/SPhi     = 0.0 deg
+d:Ge/OpticalPhantom/DPhi     = 360. deg
+d:Ge/OpticalPhantom/HL       = 2.5 cm
+d:Ge/OpticalPhantom/TransX   = 0. cm
+d:Ge/OpticalPhantom/TransY   = 0. cm
+d:Ge/OpticalPhantom/TransZ   = -2.5 cm
+d:Ge/OpticalPhantom/RotX     = 0. deg
+d:Ge/OpticalPhantom/RotY     = 0. deg
+d:Ge/OpticalPhantom/RotZ     = 0. deg
+i:Ge/OpticalPhantom/RBins    = 1
+i:Ge/OpticalPhantom/ZBins    = 1
+i:Ge/OpticalPhantom/PhiBins    = 1
+s:Ge/OpticalPhantom/Color = "blue"
+s:Ge/OpticalPhantom/OpticalBehavior = "SurfaceDetector"
 
 
 #################################################################
@@ -23,9 +43,9 @@ s:Ge/MyBox01/OpticalBehavior = "SurfaceDetector"
 #################################################################
 
 s:Sc/OpticalScorerMyBox01/Parent           = "World"
-s:Sc/OpticalScorerMyBox01/Component             = "MyBox01"
+s:Sc/OpticalScorerMyBox01/Component             = "OpticalPhantom"
 s:Sc/OpticalScorerMyBox01/Quantity              = "PhaseSpace"
-s:Sc/OpticalScorerMyBox01/Surface               = "MyBox01/ZPlusSurface"
+s:Sc/OpticalScorerMyBox01/Surface               = "OpticalPhantom/ZPlusSurface"
 i:Sc/OpticalScorerMyBox01/OutputBufferSize      = 1000
 b:Sc/OpticalScorerMyBox01/IncludeParentID       = "True"
 b:Sc/OpticalScorerMyBox01/IncludeCreatorProcess = "True"
