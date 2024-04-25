@@ -8,8 +8,8 @@ def generate_box_code(box_index, sliceLocation):
 s:Ge/MyBox{box_index}/Type     = "TsBox"
 s:Ge/MyBox{box_index}/Material = "MyWater"
 s:Ge/MyBox{box_index}/Parent   = "World"
-d:Ge/MyBox{box_index}/HLX      = 0.015 m
-d:Ge/MyBox{box_index}/HLY      = 0.015 m
+d:Ge/MyBox{box_index}/HLX      = 0.1 m
+d:Ge/MyBox{box_index}/HLY      = 0.1 m
 d:Ge/MyBox{box_index}/HLZ      = 0.001 m
 d:Ge/MyBox{box_index}/TransX   = 0 m
 d:Ge/MyBox{box_index}/TransY   = 0 m
@@ -105,38 +105,38 @@ infiniteMedium = f"""
 # Last Box {numberOfBoxes_formatted}
 
 ###################################################
-# s:Ge/MyBox{numberOfBoxes_formatted}/Type     = "TsBox"
-# s:Ge/MyBox{numberOfBoxes_formatted}/Material = "MyWater"
-# s:Ge/MyBox{numberOfBoxes_formatted}/Parent   = "World"
-# d:Ge/MyBox{numberOfBoxes_formatted}/HLX      = 0.015 m
-# d:Ge/MyBox{numberOfBoxes_formatted}/HLY      = 0.015 m
-# d:Ge/MyBox{numberOfBoxes_formatted}/HLZ      = {infiniteHLZ} m
-# d:Ge/MyBox{numberOfBoxes_formatted}/TransX   = 0 m
-# d:Ge/MyBox{numberOfBoxes_formatted}/TransY   = 0 m
-# d:Ge/MyBox{numberOfBoxes_formatted}/TransZ   = {round(lastSliceLocation,3)} m
-# s:Ge/MyBox{numberOfBoxes_formatted}/Color    = "blue"
-# s:Ge/MyBox{numberOfBoxes_formatted}/DrawingStyle = "WireFrame"
-# s:Ge/MyBox{numberOfBoxes_formatted}/OpticalBehavior = "SurfaceDetector"
+s:Ge/MyBox{numberOfBoxes_formatted}/Type     = "TsBox"
+s:Ge/MyBox{numberOfBoxes_formatted}/Material = "MyWater"
+s:Ge/MyBox{numberOfBoxes_formatted}/Parent   = "World"
+d:Ge/MyBox{numberOfBoxes_formatted}/HLX      = 0.1 m
+d:Ge/MyBox{numberOfBoxes_formatted}/HLY      = 0.1 m
+d:Ge/MyBox{numberOfBoxes_formatted}/HLZ      = {infiniteHLZ} m
+d:Ge/MyBox{numberOfBoxes_formatted}/TransX   = 0 m
+d:Ge/MyBox{numberOfBoxes_formatted}/TransY   = 0 m
+d:Ge/MyBox{numberOfBoxes_formatted}/TransZ   = {round(lastSliceLocation,3)} m
+s:Ge/MyBox{numberOfBoxes_formatted}/Color    = "blue"
+s:Ge/MyBox{numberOfBoxes_formatted}/DrawingStyle = "WireFrame"
+s:Ge/MyBox{numberOfBoxes_formatted}/OpticalBehavior = "SurfaceDetector"
 
-s:Ge/OpticalPhantom/Type = "TsCylinder"
-s:Ge/OpticalPhantom/Parent = "World"
-s:Ge/OpticalPhantom/Material = "MyWater"
-d:Ge/OpticalPhantom/RMin     = 0 cm
-d:Ge/OpticalPhantom/RMax     = 1.5 cm
-d:Ge/OpticalPhantom/SPhi     = 0.0 deg
-d:Ge/OpticalPhantom/DPhi     = 360. deg
-d:Ge/OpticalPhantom/HL       = 2.5 cm
-d:Ge/OpticalPhantom/TransX   = 0. cm
-d:Ge/OpticalPhantom/TransY   = 0. cm
-d:Ge/OpticalPhantom/TransZ   = -2.5 cm
-d:Ge/OpticalPhantom/RotX     = 0. deg
-d:Ge/OpticalPhantom/RotY     = 0. deg
-d:Ge/OpticalPhantom/RotZ     = 0. deg
-i:Ge/OpticalPhantom/RBins    = 1
-i:Ge/OpticalPhantom/ZBins    = 1
-i:Ge/OpticalPhantom/PhiBins    = 1
-s:Ge/OpticalPhantom/Color = "blue"
-s:Ge/OpticalPhantom/OpticalBehavior = "SurfaceDetector"
+# s:Ge/OpticalPhantom/Type = "TsCylinder"
+# s:Ge/OpticalPhantom/Parent = "World"
+# s:Ge/OpticalPhantom/Material = "MyWater"
+# d:Ge/OpticalPhantom/RMin     = 0 cm
+# d:Ge/OpticalPhantom/RMax     = 1.5 cm
+# d:Ge/OpticalPhantom/SPhi     = 0.0 deg
+# d:Ge/OpticalPhantom/DPhi     = 360. deg
+# d:Ge/OpticalPhantom/HL       = 2.5 cm
+# d:Ge/OpticalPhantom/TransX   = 0. cm
+# d:Ge/OpticalPhantom/TransY   = 0. cm
+# d:Ge/OpticalPhantom/TransZ   = -2.5 cm
+# d:Ge/OpticalPhantom/RotX     = 0. deg
+# d:Ge/OpticalPhantom/RotY     = 0. deg
+# d:Ge/OpticalPhantom/RotZ     = 0. deg
+# i:Ge/OpticalPhantom/RBins    = 1
+# i:Ge/OpticalPhantom/ZBins    = 1
+# i:Ge/OpticalPhantom/PhiBins    = 1
+# s:Ge/OpticalPhantom/Color = "blue"
+# s:Ge/OpticalPhantom/OpticalBehavior = "SurfaceDetector"
 
 """
 
@@ -146,9 +146,9 @@ opticalScorer = f"""
 #################################################################
 
 s:Sc/OpticalScorerMyBox01/Parent           = "World"
-s:Sc/OpticalScorerMyBox01/Component             = "OpticalPhantom"
+s:Sc/OpticalScorerMyBox01/Component             = "MyBox01"
 s:Sc/OpticalScorerMyBox01/Quantity              = "PhaseSpace"
-s:Sc/OpticalScorerMyBox01/Surface               = "OpticalPhantom/ZPlusSurface"
+s:Sc/OpticalScorerMyBox01/Surface               = "MyBox01/ZPlusSurface"
 i:Sc/OpticalScorerMyBox01/OutputBufferSize      = 1000
 b:Sc/OpticalScorerMyBox01/IncludeParentID       = "True"
 b:Sc/OpticalScorerMyBox01/IncludeCreatorProcess = "True"

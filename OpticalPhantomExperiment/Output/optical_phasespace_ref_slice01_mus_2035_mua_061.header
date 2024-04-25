@@ -1,8 +1,8 @@
 TOPAS ASCII Phase Space
 
-Number of Original Histories: 500000
-Number of Original Histories that Reached Phase Space: 77
-Number of Scored Particles: 503
+Number of Original Histories: 200000
+Number of Original Histories that Reached Phase Space: 2043
+Number of Scored Particles: 16295
 
 Columns of data are as follows:
  1: Position X [cm]
@@ -25,8 +25,8 @@ Columns of data are as follows:
 18: Initial Direction Cosine Y
 19: Initial Direction Cosine Z
 
-Number of opticalphoton: 503
+Number of opticalphoton: 16295
 
-Minimum Kinetic Energy of opticalphoton: 1.38398e-06 MeV
+Minimum Kinetic Energy of opticalphoton: 1.38009e-06 MeV
 
-Maximum Kinetic Energy of opticalphoton: 3.09926e-06 MeV
+Maximum Kinetic Energy of opticalphoton: 3.09995e-06 MeV

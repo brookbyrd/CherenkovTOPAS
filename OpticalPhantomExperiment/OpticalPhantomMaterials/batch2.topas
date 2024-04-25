@@ -9,5 +9,5 @@ s:Ge/fileEnding = "_mus_689_mua_04"
 # Add on to the files to identify optical properties
 s:Sc/OpticalScorerMyBox01/OutputFile = Sc/OpticalScorerMyBox01/OutputFile + Ge/fileEnding
 
-dv:Ma/MyWater/Miehg/Values  = 6 0.18766 0.16981 0.15152 0.13237 0.11335 0.09347  cm
+dv:Ma/MyWater/Miehg/Values  = 6 0.01877 0.01698 0.01515 0.01324 0.01134 0.00935  cm
 dv:Ma/MyWater/AbsLength/Values  = 6 2.5395 2.62825 2.523 2.47725 2.477 2.56925  cm
