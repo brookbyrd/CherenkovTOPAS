@@ -1,0 +1,403 @@
+includeFile = HUtoMaterialSchneider.topas
+
+# Set seed
+i:Ts/Seed = 1
+
+s:Ph/ListName = "Optical"
+#s:Ph/ListName = "Edeposit"
+
+s:Ph/Optical/Type     = "Geant4_Modular"
+sv:Ph/Optical/Modules = 7 "g4em-standard_opt4" "g4h-phy_QGSP_BIC_HP" "g4decay" "g4ion-binarycascade" "g4h-elastic_HP" "g4stopping" "g4optical"
+# d:Ph/Optical/CutForGamma    = 0.04 mm
+# d:Ph/Optical/CutForElectron = 0.03 mm
+# d:Ph/Optical/CutForPositron = 0.02 mm
+# d:Ph/Optical/CutForProton   = 0.01 mm
+
+# s:Ph/Edeposit/Type     = "Geant4_Modular"
+# sv:Ph/Edeposit/Modules = 6 "g4em-standard_opt4" "g4h-phy_QGSP_BIC_HP" "g4decay" "g4ion-binarycascade" "g4h-elastic_HP" "g4stopping" 
+# d:Ph/Edeposit/CutForGamma    = 0.04 mm
+# d:Ph/Edeposit/CutForElectron = 0.03 mm
+# d:Ph/Edeposit/CutForPositron = 0.02 mm
+# d:Ph/Edeposit/CutForProton   = 0.01 mm
+
+b:Ph/ListProcesses = "False"
+
+#sv:Ph/Optical/LayeredMassGeometryWorlds = 2 "Parallel" "World"
+
+# SELECT NUMBER OF RUNS
+i:So/6X/NumberOfHistoriesInRun   = 10000#000000 #10M
+
+###################################################
+# Coordination
+###################################################
+
+# World: Fixed coordination in IEC
+d:Ge/World/HLX       = 2.0 m
+d:Ge/World/HLY       = 2.0 m
+d:Ge/World/HLZ       = 2.0 m
+b:Ge/World/Invisible = "TRUE"
+
+# Mass World
+s:Ge/MassWorldBox/Parent     = "World"
+s:Ge/MassWorldBox/Type       = "Group"
+s:Ge/MassWorldBox/Material   = "Air"
+b:Ge/MassWorldBox/IsParallel = "FALSE"
+d:Ge/MassWorldBox/HLX        = 2.5 m
+d:Ge/MassWorldBox/HLY        = 2.5 m
+d:Ge/MassWorldBox/HLZ        = 2.5 m
+s:Ge/MassWorldBox/Color      = "blue"
+
+# Parallel world for scoring
+s:Ge/ParallelWorldBox/Parent     = "MassWorldBox"
+s:Ge/ParallelWorldBox/Type       = "TsBox"
+b:Ge/ParallelWorldBox/IsParallel = "TRUE"
+d:Ge/ParallelWorldBox/HLX        = 0.25 m
+d:Ge/ParallelWorldBox/HLY        = 0.25 m
+d:Ge/ParallelWorldBox/HLZ        = 0.25 m
+s:Ge/ParallelWorldBox/Color      = "green"
+i:Ge/ParallelWorldBox/XBins      = 100
+i:Ge/ParallelWorldBox/YBins      = 100
+i:Ge/ParallelWorldBox/ZBins      = 100
+
+s:Ge/ParallelWorldBox/DrawingStyle = "WireFrame"
+b:Ge/ParallelWorldBox/EnableOpticalProperties = "True"
+s:Ge/ParallelWorldBox/OpticalBehavior = "SurfaceDetector"
+
+# IEC_G: Gantry
+s:Ge/IEC_G/Parent  = "MassWorldBox"
+s:Ge/IEC_G/Type    = "Group"
+d:Ge/IEC_G/RotX    = 0. deg
+d:Ge/IEC_G/RotZ    = 0. deg
+d:Ge/IEC_G/TransX  = 0. m
+d:Ge/IEC_G/TransY  = 0. m
+d:Ge/IEC_G/TransZ  = 0. m
+
+# IEC_B: Collimator
+s:Ge/IEC_B/Parent           = "IEC_G"
+s:Ge/IEC_B/Type             = "Group"
+d:Ge/IEC_B/RotX             = 0. deg
+d:Ge/IEC_B/RotY             = 0. deg
+d:Ge/IEC_B/TransX           = 0. m
+d:Ge/IEC_B/TransY           = 0. m
+d:Ge/IEC_B/TransZ           = 0. m
+
+# IEC_S: Patient support
+s:Ge/IEC_S/Parent  = "MassWorldBox"
+s:Ge/IEC_S/Type    = "Group"
+d:Ge/IEC_S/RotX    = 0. deg
+d:Ge/IEC_S/RotY    = 0. deg
+d:Ge/IEC_S/TransX  = 0. m
+d:Ge/IEC_S/TransY  = 0. m
+d:Ge/IEC_S/TransZ  = 0. m
+
+# DICOM_to_IEC
+s:Ge/DICOM_to_IEC/Parent = "IEC_S"
+s:Ge/DICOM_to_IEC/Type   = "Group"
+d:Ge/DICOM_to_IEC/RotX   = 90.0 deg
+d:Ge/DICOM_to_IEC/RotY   = 0.0  deg
+d:Ge/DICOM_to_IEC/RotZ   = 0.0  deg
+
+d:Ge/SAD = 100. cm
+
+####################################################
+# Source from phase space
+####################################################
+
+s:Ge/PlanePosition/Parent = "IEC_G"
+s:Ge/PlanePosition/Type = "Group"
+d:Ge/PlanePosition/TransX = 0. cm
+d:Ge/PlanePosition/TransY = 0. cm
+d:Ge/PlanePosition/TransZ = Ge/SAD - 26.7 cm 
+d:Ge/PlanePosition/RotX = 0.  deg
+d:Ge/PlanePosition/RotY = 180.  deg
+d:Ge/PlanePosition/RotZ = 0. deg
+
+s:So/6X/Type = "PhaseSpace"
+s:So/6X/Component = "PlanePosition" # coordinate system of phase space. Usually "World"
+s:So/6X/PhaseSpaceFileName = "/Applications/topas/phsp/TrueBeam_v2_6FFF_00" # match exact case
+b:So/6X/PhaseSpaceIncludeEmptyHistories = "False" # defaults to false
+b:So/6X/PhaseSpacePreCheck = "False" 
+i:So/6X/PhaseSpaceMultipleUse = 0 # number of histories in phase space is ignored 
+
+# Define the source-to-surface distance (SSD) and phantom size
+dc:So/6X/SourceToSurfaceDistance = 100.0 cm
+
+####################################################
+# Jaws
+####################################################
+d:Ge/TravelAxisX = 0. deg # Constant to help remember angle for X Axis Travel
+d:Ge/TravelAxisY = 90. deg # Constant to help remember angle for Y Axis Travel
+
+
+ Y Jaws
+s:Ge/YJaw/JawTravelAxis  = "Y" # Jaw travel axis, "X" or "Y"
+s:Ge/YJaw/Parent         = "IEC_B"
+s:Ge/YJaw/Type           = "TsJaws"
+s:Ge/YJaw/Material       = "G4_W"
+d:Ge/YJaw/LX             = 20. cm  # Actual jaw width along JawTravelAxis
+d:Ge/YJaw/LY             = 20. cm  # Actual jaw length perpendicular to JawTravelAxis
+d:Ge/YJaw/LZ             = 7.80 cm # Jaw thickness along IEC Zb axis
+d:Ge/YJaw/SourceToUpstreamSurfaceDistance = 26.7 cm #Distance from x-ray target to jaw 
+d:Ge/YJaw/SAD        	= Ge/SAD cm
+d:Ge/YJaw/DistSourceToSAD = Ge/YJaw/SAD - Ge/YJaw/SourceToUpstreamSurfaceDistance cm
+d:Ge/YJaw/HalfThickness = 0.5 * Ge/YJaw/LZ cm
+d:Ge/YJaw/TransZ = Ge/YJaw/DistSourceToSAD - Ge/YJaw/HalfThickness cm
+d:Ge/YJaw/RotZ = Ge/TravelAxisY deg # Set to one of the above two constants
+s:Ge/YJaw/DrawingStyle   = "Solid" # Solid, WireFrame
+s:Ge/YJaw/Color = "green"
+b:Ge/YJaw/Visible = "True"
+
+
+# X Jaws
+s:Ge/XJaw/JawTravelAxis  = "X" # Jaw travel axis, "X" or "Y"
+s:Ge/XJaw/Parent         = "IEC_B"
+s:Ge/XJaw/Type           = "TsJaws"
+s:Ge/XJaw/Material       = "G4_W"
+d:Ge/XJaw/LX             = 20. cm  # Actual jaw width along JawTravelAxis
+d:Ge/XJaw/LY             = 20. cm  # Actual jaw length perpendicular to JawTravelAxis
+d:Ge/XJaw/LZ             = 7.80 cm # Jaw thickness along IEC Zb axis
+d:Ge/XJaw/SourceToUpstreamSurfaceDistance = 34.5 cm #Distance from x-ray target to jaw 
+d:Ge/XJaw/SAD        	= Ge/SAD cm
+d:Ge/XJaw/DistSourceToSAD = Ge/XJaw/SAD - Ge/XJaw/SourceToUpstreamSurfaceDistance cm
+d:Ge/XJaw/HalfThickness = 0.5 * Ge/XJaw/LZ cm
+d:Ge/XJaw/TransZ = Ge/XJaw/DistSourceToSAD - Ge/XJaw/HalfThickness cm
+d:Ge/XJaw/RotZ = Ge/TravelAxisX deg # Set to one of the above two constants
+s:Ge/XJaw/DrawingStyle   = "Solid"
+s:Ge/XJaw/Color = "red"
+b:Ge/XJaw/Visible = "True"
+
+# Geometry parameters from plan
+dc:Ge/Gantry_Angle = 0.0 deg
+dc:Ge/Collimator_Angle = 0.0 deg
+dc:Ge/Couch_Angle = 0.0 deg
+
+# Set the jaw positions for the uniform field to create a 28x28cm field
+dc:Ge/YJaw/PositiveFieldSetting = 14.0 cm
+dc:Ge/YJaw/NegativeFieldSetting = -14.0 cm
+dc:Ge/XJaw/PositiveFieldSetting = 14.0 cm
+dc:Ge/XJaw/NegativeFieldSetting = -14.0 cm
+
+# Other Housekeeping
+d:Ge/IEC_G/RotY = -1.0 * Ge/Gantry_Angle deg
+d:Ge/IEC_B/RotZ = -1.0 * Ge/Collimator_Angle deg
+d:Ge/IEC_S/RotZ = Ge/Couch_Angle deg
+
+
+####################################################
+# MLCs
+####################################################
+# Common parameters: type of geometry, position, and rotation
+s:Ge/MLC/Parent           = "IEC_B" # IEC beam limiting device coordinates
+s:Ge/MLC/Type             = "TsMultiLeafCollimator"
+s:Ge/MLC/Material         = "G4_W"
+d:Ge/MLC/SAD              = Ge/SAD cm 
+
+# Geometry taken from AAPM: https://www.aapm.org/meetings/99am/pdf/2787-9625.pdf
+#d:Ge/MLC/SourceToUpstreamSurfaceDistance = 46.8 cm # Distance from source to top of MLC bank
+s:Ge/MLC/LeafTravelAxis   = "X" # Leaf travel axis, "X" or "Y"
+d:Ge/MLC/MaximumLeafOpen  = 20.0 cm # Actual limit of leaf travel
+d:Ge/MLC/Thickness        = 6.7 cm # Actual thickness of MLC leaves along IEC Zb
+d:Ge/MLC/Length           = 20.0 cm # Length of MLC leaves in direction of travel
+d:Ge/MLC/TransX   = 0 m
+d:Ge/MLC/TransY   = 0 m
+d:Ge/MLC/TransZ   = 53.5 cm
+
+# MLC leaf widths and positions, projected to isocenter for 10 cm x 20 cm field
+dv:Ge/MLC/Widths = 60 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 cm
+#dv:Ge/MLC/NegativeFieldSetting = 60 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 cm
+#dv:Ge/MLC/PositiveFieldSetting = 60 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 cm
+
+s:Ge/MLC/DrawingStyle     = "Solid"
+b:Ge/MLC/PrintInformation = "False"
+
+# Each leaf’s opening distance from Y axis.
+# XMinusLeavesOpen means the x position of X- leaf’s right edge.
+# XPlusLeavesOpen means the x position of X+ leaf’s left edge.
+dv:Ge/MLC/XMinusLeavesOpen = 60  -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 -20 cm
+dv:Ge/MLC/XPlusLeavesOpen = 60  20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 cm
+
+# Establish DICOM offset
+d:Ge/DICOM_to_IEC/TransX   = 5.82 cm
+d:Ge/DICOM_to_IEC/TransY   = -0.25 cm
+d:Ge/DICOM_to_IEC/TransZ   = -3.28 cm
+
+# Enable Cherenkov
+b:Sc/Cerenkov/Enable = "true"
+
+######################################## 
+PATIENT MATERIAL PROPERTIES
+########################################
+b:Ma/MyWater/BuildFromMaterials = "True"
+sv:Ma/MyWater/Components = 1 "G4_WATER"
+uv:Ma/MyWater/Fractions = 1 1
+d:Ma/MyWater/Density = 1 g/cm3
+
+d:Ma/MyWater/MeanExcitationEnergy = 108.2 eV
+dv:Ma/MyWater/RefractiveIndex/Energies = 2 1.24 3.1 eV
+uv:Ma/MyWater/RefractiveIndex/Values = 2 1.53 1.56 
+dv:Ma/MyWater/AbsLength/Energies = 2 1.24 3.1 eV
+dv:Ma/MyWater/AbsLength/Values = 2 3.185 3.185 cm
+# This is atomic and doesnt change
+dv:Ma/MyWater/Rayleigh/Energies = 7 1.24 1.38 1.55 1.77 2.07 2.48 3.1 eV
+dv:Ma/MyWater/Rayleigh/Values = 7 0.5 0.328 0.205 0.12 0.065 0.031 0.013 cm
+# This should be wavelength dependent
+dv:Ma/MyWater/Miehg/Energies = 7 1.24 1.38 1.55 1.77 2.07 2.48 3.1 eV
+dv:Ma/MyWater/Miehg/Values = 7 0.127 0.116 0.105 0.094 0.083 0.071 0.059 cm
+u:Ma/MyWater/Miehg_Forward = 0.9
+u:Ma/MyWater/Miehg_Backward = 0.9
+u:Ma/MyWater/Miehg_Forward_Ratio = 1
+b:Ma/MyWater/EnableOpticalProperties = "True"
+
+dv:Ma/Air/RefractiveIndex/Energies = 2 1.24 3.1 eV
+uv:Ma/Air/RefractiveIndex/Values = 2 1.0 1.0
+dv:Ma/Air/AbsLength/Energies = 2 1.24 3.1 eV
+dv:Ma/Air/AbsLength/Values = 2 50.0 50.0 m
+b:Ma/Air/EnableOpticalProperties = "True"
+
+###################################################
+#  Patient in DICOM
+####################################################
+
+# s:Ge/Patient/Parent   = "MassWorldBox"
+# s:Ge/Patient/Type     = "TsDicomPatient"
+# s:Ge/Patient/Material = "MyWater"
+
+# s:Ge/Patient/HUtoMaterialConversionMethod = "Schneider"
+
+# d:Ge/Patient/RotX     = 90.0 deg
+# d:Ge/Patient/RotY     = 0.0 deg
+# d:Ge/Patient/RotZ     = 0.0 deg
+
+# d:Ge/Patient/TransX   = 5.82 cm
+# d:Ge/Patient/TransY   = -0.25 cm
+# d:Ge/Patient/TransZ   = -3.28 cm
+
+# s:Ge/Patient/DicomDirectory      = "Annie_CT"
+# b:Ge/Patient/IgnoreInconsistentFrameOfReferenceUID = "True"
+# sv:Ge/Patient/DicomModalityTags = 1 "CT"
+
+# # iv:Ge/Patient/ShowSpecificSlicesX = 1 197
+# # iv:Ge/Patient/ShowSpecificSlicesY = 1 222
+# # iv:Ge/Patient/ShowSpecificSlicesZ = 1 62
+
+# s:Ge/Patient/DrawingStyle     = "WireFrame"
+# s:Ge/Patient/Color    = "green"
+
+###################################################
+#  Patient Surface in STL
+####################################################
+s:Ge/PatientSurface/Parent   = "MassWorldBox"
+s:Ge/PatientSurface/Type     = "TsCAD"
+s:Ge/PatientSurface/Material = "MyWater"
+s:Ge/PatientSurface/InputFile = "/Applications/topas/Annie_BKB/Segmentation_decimated"
+
+s:Ge/PatientSurface/FileFormat = "stl"
+d:Ge/PatientSurface/Units      = 1 mm
+
+d:Ge/PatientSurface/RotX     = 90.0 deg
+d:Ge/PatientSurface/RotY     = 0.0 deg
+d:Ge/PatientSurface/RotZ     = 0.0 deg
+
+d:Ge/PatientSurface/TransX   = 5.82 cm
+d:Ge/PatientSurface/TransY   = -0.25 cm
+d:Ge/PatientSurface/TransZ   = -3.28 cm
+
+s:Ge/PatientSurface/DrawingStyle     = "Solid"
+s:Ge/PatientSurface/Color    = "blue"
+b:Ge/PatientSurface/EnableOpticalProperties = "True"
+s:Ge/PatientSurface/OpticalBehavior = "SurfaceDetector"
+
+###################################################
+#  Patient Surface in as box
+####################################################
+
+# s:Ge/PatientSurface/Parent   = "MassWorldBox"
+# s:Ge/PatientSurface/Type     = "TsBox"
+# s:Ge/PatientSurface/Material = "MyWater"
+
+# d:Ge/PatientSurface/HLX       = 0.145 m
+# d:Ge/PatientSurface/HLY       = 0.145 m
+# d:Ge/PatientSurface/HLZ       = 0.19 m
+
+# s:Ge/PatientSurface/DrawingStyle     = "WireFrame"
+# s:Ge/PatientSurface/Color    = "purple"
+# b:Ge/PatientSurface/EnableOpticalProperties = "True"
+# s:Ge/PatientSurface/OpticalBehavior = "SurfaceDetector"
+
+
+# ###################################################
+# # Dose Scoring
+# ####################################################
+s:Sc/Dose/Component        = "ParallelWorldBox"
+s:Sc/Dose/Quantity       = "DoseToMedium"
+#s:Sc/Dose/Surface        = "ParallelWorldBox/ZPlusSurface" # Keeping it consistent with phase space
+
+# Output params
+s:Sc/Dose/OutputFolder = "/Applications/topas/Annie_BKB/Output/"
+s:Sc/Dose/OutputFile = "/Applications/topas/Annie_BKB/Output/dose_mybox"
+b:Sc/Dose/OutputToConsole           = "False"
+s:Sc/Dose/IfOutputFileAlreadyExists = "Overwrite"
+sv:Sc/Dose/Report = 2 "mean" "standard_deviation"
+
+# DICOM parameters
+s:Sc/Dose/OutputType = "DICOM"
+b:Sc/Dose/DICOMOutput32BitsPerPixel = "True"
+
+# ####################################################
+# # Phase space scoring
+# ####################################################
+
+s:Sc/OpticalScorerMyBox/Component             = "ParallelWorldBox"
+s:Sc/OpticalScorerMyBox/Quantity              = "PhaseSpace"
+s:Sc/OpticalScorerMyBox/Surface               = "ParallelWorldBox/ZPlusSurface"
+i:Sc/OpticalScorerMyBox/OutputBufferSize      = 1000
+b:Sc/OpticalScorerMyBox/IncludeParentID       = "True"
+b:Sc/OpticalScorerMyBox/IncludeCreatorProcess = "True"
+b:Sc/OpticalScorerMyBox/IncludeVertexInfo     = "True"
+sv:Sc/OpticalScorerMyBox/OnlyIncludeParticlesNamed = 1 "opticalphoton"
+# d:Sc/OpticalScorerMyBox/OnlyIncludeIfIncidentParticleKEAbove = 1.38 eV
+# d:Sc/OpticalScorerMyBox/OnlyIncludeIfIncidentParticleKEBelow = 3.1 eV
+# s:Sc/OpticalScorerMyBox/OnlyIncludeParticlesGoing = "Out"
+s:Sc/OpticalScorerMyBox/OutputFolder = "/Applications/topas/Annie_BKB/Output/"
+s:Sc/OpticalScorerMyBox/OutputFile = "/Applications/topas/Annie_BKB/Output/phasespace_mybox"
+b:Sc/OpticalScorerMyBox/OutputToConsole       = "True"
+s:Sc/OpticalScorerMyBox/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/OpticalScorerMyBox/OutputType            = "ASCII"
+i:Sc/OpticalScorerMyBox/BounceLimit           = 1000000
+b:Sc/OpticalScorerMyBox/EnableOpticalProperties = "True"
+
+# Setting up optical surface detector
+s:Su/SurfaceDetector/Type                = "dielectric_dielectric"
+s:Su/SurfaceDetector/Finish              = "ground"
+s:Su/SurfaceDetector/Model               = "glisur"
+dv:Su/SurfaceDetector/Efficiency/Energies   = 2 1.24 3.1 eV
+uv:Su/SurfaceDetector/Efficiency/Values     = 2 1.0 1.0
+dv:Su/SurfaceDetector/Reflectivity/Energies = 2 1.24 3.1 eV
+uv:Su/SurfaceDetector/Reflectivity/Values   = 2 0.005 0.015
+
+
+# ####################################################
+# # Visualization 
+# ####################################################
+# # Visualization settings - Choose the visualization type (OpenGL)
+# s:Gr/MyGraphic1/Type = "OpenGL" 
+
+# b:Gr/MyGraphic1/IncludeGeometry = "True" # defaults to "True"
+# b:Gr/MyGraphic1/IncludeTrajectories = "True" # defaults to "True"
+# b:Gr/MyGraphic1/IncludeStepPoints = "True" # Show trajectory step points, defaults to "False"
+# iv:Gr/Color/lightblue = 3 175 255 255
+# b:Gr/MyGraphic1/IncludeAxes = "True" # defaults to "False"
+# s:Gr/MyGraphic1/AxesComponent = "World" # Component in which to center the axes. Defaults to World.
+# #d:Gr/MyGraphic1/AxesSize = 3. m # size of axes
+
+# s:Gr/RefreshEvery = "Session" # "History", "Run" or "Session"
+# #sv:Gr/MyGraphic1/VisibleWorlds = 2 "Parallel" "World" # "World", "All" or one or more specific world names
+# i:Gr/MyGraphic1/WindowSizeX = 600
+# i:Gr/MyGraphic1/WindowSizeY = 600
+# b:Gr/MyGraphic1/HiddenLineRemovalForGeometry = "False" # Remove hidden lines from wireframe geometries, like Geant4’s /vis/viewer/set/hiddenEdge
+# b:Gr/MyGraphic1/HiddenLineRemovalForTrajectories = "False" # Remove hidden trajectories lines from within geometries, like Geant4’s /vis/viewer/set/hiddenMarker
+# b:Ge/MyGraphic1/QuiteIfOverlapDetected = "False"
+
+# b:Gr/MyGraphic1/Active = "True" # defaults to "True"
+b:Ge/QuitIfOverlapDetected = "False"
+
